@@ -16,10 +16,10 @@ rm $TMP/$PROJECT/create_archive.sh
 perl -pi.bak -e "s/\\\$RELEASEDATE/$RELEASEDATE/g" $TMP/$PROJECT/README.md
 rm -f $TMP/$PROJECT/README.md.bak
 
-mkdir -p $TMP/$PROJECT/doc/fonts/uptex-fonts
-mv $TMP/$PROJECT/LICENSE $TMP/$PROJECT/doc/fonts/uptex-fonts/
-mv $TMP/$PROJECT/README.md $TMP/$PROJECT/doc/fonts/uptex-fonts/
-mv $TMP/$PROJECT/*.txt $TMP/$PROJECT/doc/fonts/uptex-fonts/
+mkdir -p $TMP/$PROJECT/doc/fonts/uptex
+mv $TMP/$PROJECT/LICENSE $TMP/$PROJECT/doc/fonts/uptex/
+mv $TMP/$PROJECT/README.md $TMP/$PROJECT/doc/fonts/uptex/
+mv $TMP/$PROJECT/*.txt $TMP/$PROJECT/doc/fonts/uptex/
 
 mkdir -p $TMP/$PROJECT/fonts/cmap/uptex
 mv $TMP/$PROJECT/cmap/* $TMP/$PROJECT/fonts/cmap/uptex

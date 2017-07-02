@@ -16,6 +16,7 @@ pl:
 	perl -s -n -C makepl.perl -hk jis.pl > upjisr-h-hk.pl
 	$(TFTOPL) `kpsewhich jis-v.tfm` jis-v.pl
 	perl -s -n -C makepl.perl jis-v.pl > upjisr-v.pl
+	rm -f jis.pl jis-v.pl
 
 tfm:
 	for fnt in upjisr upjisg upjpnrm upjpngt ; do \

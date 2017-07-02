@@ -69,6 +69,6 @@ vf:
 	$(MAKEJVFC3) uptchgt-v.tfm upmhm-v
 
 move:
-	mkdir -pv ../../../tfm/uptex/jis ../../../vf/uptex/jis
-	mv -i *.tfm ../../../tfm/uptex/jis
-	mv -i *.vf ../../../vf/uptex/jis
+	mkdir -pv ../tfm ../vf
+	mv *.tfm ../tfm
+	mv *.vf ../vf

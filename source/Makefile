@@ -21,10 +21,10 @@ pl:
 tfm:
 	for fnt in upjisr upjisg upjpnrm upjpngt ; do \
 		$(PLTOTF) upjisr-h-hk.pl $$fnt-h.tfm ; \
-	done ; \
+	done
 	for fnt in upjisr upjisg upjpnrm upjpngt ; do \
 		$(PLTOTF) upjisr-v.pl $$fnt-v.tfm ; \
-	done ; \
+	done
 	for hv in h v ; do \
 	for fnt in upkorrm upkorgt upschrm upschgt uptchrm uptchgt ; do \
 		$(PLTOTF) upjisr-$$hv.pl $$fnt-$$hv.tfm ; \

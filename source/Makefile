@@ -29,6 +29,9 @@ tfm:
 	for fnt in upkorrm upkorgt upschrm upschgt uptchrm uptchgt ; do \
 		$(PLTOTF) upjisr-$$hv.pl $$fnt-$$hv.tfm ; \
 	done ; \
+	for fnt in uptchcrm uptchcgt ; do \
+		$(PLTOTF) uptchcr-$$hv.pl $$fnt-$$hv.tfm ; \
+	done ; \
 	done
 	for fnt in upjisr-hq upjisg-hq ; do \
 		$(PLTOTF) upjisr-h.pl $$fnt.tfm ; \
@@ -46,28 +49,32 @@ pstfm:
 	done
 
 vf:
-	$(MAKEJVFJ) -H -U upjisr-hq upjisr-h.tfm uprml-h
-	$(MAKEJVFJ) -H -U upjisg-hq upjisg-h.tfm upgbm-h
-	$(MAKEJVFJ) upjisr-v.tfm uprml-v
-	$(MAKEJVFJ) upjisg-v.tfm upgbm-v
-	$(MAKEJVFJQ) upjisr-hq.tfm uprml-hq
-	$(MAKEJVFJQ) upjisg-hq.tfm upgbm-hq
-	$(MAKEJVFJ3) -H -U upjisr-hq upjpnrm-h.tfm uprml-h
-	$(MAKEJVFJ3) -H -U upjisg-hq upjpngt-h.tfm upgbm-h
-	$(MAKEJVFJ3) upjpnrm-v.tfm uprml-v
-	$(MAKEJVFJ3) upjpngt-v.tfm upgbm-v
-	$(MAKEJVFK) upkorrm-h.tfm uphysmjm-h
-	$(MAKEJVFK) upkorgt-h.tfm uphygt-h
-	$(MAKEJVFK) upkorrm-v.tfm uphysmjm-v
-	$(MAKEJVFK) upkorgt-v.tfm uphygt-v
-	$(MAKEJVFG3) upschrm-h.tfm upstsl-h
-	$(MAKEJVFG3) upschgt-h.tfm upstht-h
-	$(MAKEJVFG3) upschrm-v.tfm upstsl-v
-	$(MAKEJVFG3) upschgt-v.tfm upstht-v
-	$(MAKEJVFC3) uptchrm-h.tfm upmsl-h
-	$(MAKEJVFC3) uptchgt-h.tfm upmhm-h
-	$(MAKEJVFC3) uptchrm-v.tfm upmsl-v
-	$(MAKEJVFC3) uptchgt-v.tfm upmhm-v
+	$(MAKEJVFJ) -e -H -U upjisr-hq upjisr-h.tfm uprml-h
+	$(MAKEJVFJ) -e -H -U upjisg-hq upjisg-h.tfm upgbm-h
+	$(MAKEJVFJ) -e upjisr-v.tfm uprml-v
+	$(MAKEJVFJ) -e upjisg-v.tfm upgbm-v
+	$(MAKEJVFJQ) -e upjisr-hq.tfm uprml-hq
+	$(MAKEJVFJQ) -e upjisg-hq.tfm upgbm-hq
+	$(MAKEJVFJ3) -e -H -U upjisr-hq upjpnrm-h.tfm uprml-h
+	$(MAKEJVFJ3) -e -H -U upjisg-hq upjpngt-h.tfm upgbm-h
+	$(MAKEJVFJ3) -e upjpnrm-v.tfm uprml-v
+	$(MAKEJVFJ3) -e upjpngt-v.tfm upgbm-v
+	$(MAKEJVFK) -e upkorrm-h.tfm uphysmjm-h
+	$(MAKEJVFK) -e upkorgt-h.tfm uphygt-h
+	$(MAKEJVFK) -e upkorrm-v.tfm uphysmjm-v
+	$(MAKEJVFK) -e upkorgt-v.tfm uphygt-v
+	$(MAKEJVFG3) -e upschrm-h.tfm upstsl-h
+	$(MAKEJVFG3) -e upschgt-h.tfm upstht-h
+	$(MAKEJVFG3) -e upschrm-v.tfm upstsl-v
+	$(MAKEJVFG3) -e upschgt-v.tfm upstht-v
+	$(MAKEJVFC3) -e uptchrm-h.tfm upmsl-h
+	$(MAKEJVFC3) -e uptchgt-h.tfm upmhm-h
+	$(MAKEJVFC3) -e uptchrm-v.tfm upmsl-v
+	$(MAKEJVFC3) -e uptchgt-v.tfm upmhm-v
+	$(MAKEJVFC3) -e uptchcrm-h.tfm upmsl-h
+	$(MAKEJVFC3) -e uptchcgt-h.tfm upmhm-h
+	$(MAKEJVFC3) -e uptchcrm-v.tfm upmsl-v
+	$(MAKEJVFC3) -e uptchcgt-v.tfm upmhm-v
 
 move:
 	mkdir -pv ../tfm ../vf

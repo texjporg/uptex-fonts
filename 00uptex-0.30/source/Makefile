@@ -32,8 +32,8 @@ tfm:
 vf:
 	$(MAKEJVFJ) -J rml  umin10.tfm   urml
 	$(MAKEJVFJ) -J gbm  ugoth10.tfm  ugbm
-	$(MAKEJVFJ) utmin10.tfm  urmlv
-	$(MAKEJVFJ) utgoth10.tfm ugbmv
+	$(MAKEJVFJ) -m utmin10.tfm  urmlv
+	$(MAKEJVFJ) -m utgoth10.tfm ugbmv
 	$(MAKEJVFJ) -J rml ujis.tfm     urml
 	$(MAKEJVFJ) -J rml ujisn.tfm    urml
 	$(MAKEJVFJ) ujis-v.tfm   urmlv
@@ -66,8 +66,8 @@ vf5:
 	for pt in 5 6 7 8 9 10; do \
 		$(MAKEJVFJ) -J rml  umin$$pt.tfm   urml ; \
 		$(MAKEJVFJ) -J gbm  ugoth$$pt.tfm  ugbm ; \
-		$(MAKEJVFJ) utmin$$pt.tfm  urmlv ; \
-		$(MAKEJVFJ) utgoth$$pt.tfm ugbmv ; \
+		$(MAKEJVFJ) -m utmin$$pt.tfm  urmlv ; \
+		$(MAKEJVFJ) -m utgoth$$pt.tfm ugbmv ; \
 	done
 
 move:

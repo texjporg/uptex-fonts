@@ -1,0 +1,12 @@
+This directory contains optional upTeX/upLaTeX fonts, derived from
+upTeX-0.30 distribution:
+
+* umin*, ugoth*
+  compatible with min/goth (pTeX standard fonts) in ptex-fonts
+* ujis*, ujis*-v
+  compatible with jis/jis-v (JIS fonts) in ptex-fonts
+
+These fonts are not installed by upTeX-1.xx, but distributed here
+only for test purpose.
+
+Japanese TeX Development Community (2017/07/20)

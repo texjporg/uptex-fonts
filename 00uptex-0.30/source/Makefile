@@ -42,7 +42,9 @@ vf:
 	$(MAKEJVFJ) -J gbm ujisng.tfm   ugbm
 	$(MAKEJVFJ) ujisg-v.tfm  ugbmv
 	$(MAKEJVFJ) ujisng-v.tfm ugbmv
-	rm -f rml.tfm gbm.tfm
+	for fnt in rml gbm urml ugbm urmlv ugbmv; do \
+		rm -f $$fnt.tfm ; \
+	done
 
 pl5:
 	sed -e 's/MINCHO/GOTHIC/' -e 's/MRR/BRR/' umin10.pl > ugoth10.pl
@@ -71,6 +73,11 @@ vf5:
 	done
 
 move:
+	mkdir -pv ../../tfm ../../vf
+	for fnt in min10 goth10 tmin10 tgoth10; do \
+		mv u$$fnt.tfm ../../tfm ; \
+		mv u$$fnt.vf ../../vf ; \
+	done
 	mkdir -pv ../tfm ../vf
 	mv *.tfm ../tfm
 	mv *.vf ../vf

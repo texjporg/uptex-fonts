@@ -53,21 +53,21 @@
    (STOP)
    )
 (CHARSINTYPE O 1
-   $B!F(B $B!H(B $B!J(B $B!L(B $B!N(B $B!P(B $B!R(B $B!T(B $B!V(B $B!X(B $B!Z(B 
+   ‘ “ （ 〔 ［ ｛ 〈 《 「 『 【 
    UFF5F U3018 U3016 U301D 
    )
 (CHARSINTYPE O 2
-   $B!"(B $B!$(B $B!G(B $B!I(B $B!K(B $B!M(B $B!O(B $B!Q(B $B!S(B $B!U(B $B!W(B $B!Y(B $B![(B 
+   、 ， ’ ” ） 〕 ］ ｝ 〉 》 」 』 】 
    UFF60 U3019 U3017 U301F 
    )
 (CHARSINTYPE O 3
-   $B!&(B $B!'(B $B!((B 
+   ・ ： ； 
    )
 (CHARSINTYPE O 4
-   $B!#(B $B!%(B 
+   。 ． 
    )
 (CHARSINTYPE O 5
-   $B!=(B $B!D(B $B!E(B 
+   ― … ‥ 
    )
 (TYPE O 0
    (CHARWD R 0.962216)

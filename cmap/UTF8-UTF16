@@ -3,9 +3,9 @@
 %%IncludeResource: ProcSet (CIDInit)
 %%BeginResource: CMap (UTF8-UTF16)
 %%Title: (UTF8-UTF16 UCS Conversion)
-%%Version: 1.003
+%%Version: 1.004
 %%Copyright: -----------------------------------------------------------
-%%Copyright: Copyright (c) 2012,2014,2016 Takuji Tanaka
+%%Copyright: Copyright (c) 2012-2017 Takuji Tanaka
 %%Copyright: All rights reserved.
 %%Copyright:
 %%Copyright: Redistribution and use in source and binary forms, with or
@@ -36,9 +36,9 @@
 %%Copyright: SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %%Copyright: -----------------------------------------------------------
 %%Comment: -------------------------------------------------------------
-%%Comment: Undefined code points in Unicode 9.0 are not included.
+%%Comment: Undefined code points in Unicode 10.0 are not included.
 %%Comment: Ref. http://www.unicode.org/Public/UNIDATA/Blocks.txt
-%%Comment:    "Blocks-9.0.0.txt Date: 2016-02-05, 23:48:00 GMT [KW]"
+%%Comment:    "Blocks-10.0.0.txt Date: 2017-04-12, 17:30:00 GMT [KW]"
 %%Comment: -------------------------------------------------------------
 %%EndComments
 
@@ -56,7 +56,7 @@ end def
 
 /CMapName /UTF8-UTF16 def
 
-/CMapVersion 1.003 def
+/CMapVersion 1.004 def
 /CMapType 2 def
 /WMode 0 def
 
@@ -1165,10 +1165,15 @@ endbfrange
 <f0919c80> <f0919cbf> <d805df00>
 <f091a280> <f091a2bf> <d806dc80>
 <f091a380> <f091a3bf> <d806dcc0>
+<f091a880> <f091a8bf> <d806de00>
+<f091a980> <f091a9bf> <d806de40>
+<f091aa80> <f091aabf> <d806de80>
 <f091ab80> <f091abbf> <d806dec0>
 <f091b080> <f091b0bf> <d807dc00>
 <f091b180> <f091b1bf> <d807dc40>
 <f091b280> <f091b2bf> <d807dc80>
+<f091b480> <f091b4bf> <d807dd00>
+<f091b580> <f091b5bf> <d807dd40>
 <f0928080> <f09280bf> <d808dc00>
 <f0928180> <f09281bf> <d808dc40>
 <f0928280> <f09282bf> <d808dc80>
@@ -1197,14 +1202,14 @@ endbfrange
 <f0938380> <f09383bf> <d80cdcc0>
 <f0938480> <f09384bf> <d80cdd00>
 <f0938580> <f09385bf> <d80cdd40>
+endbfrange
+
+100 beginbfrange
 <f0938680> <f09386bf> <d80cdd80>
 <f0938780> <f09387bf> <d80cddc0>
 <f0938880> <f09388bf> <d80cde00>
 <f0938980> <f09389bf> <d80cde40>
 <f0938a80> <f0938abf> <d80cde80>
-endbfrange
-
-100 beginbfrange
 <f0938b80> <f0938bbf> <d80cdec0>
 <f0938c80> <f0938cbf> <d80cdf00>
 <f0938d80> <f0938dbf> <d80cdf40>
@@ -1300,14 +1305,14 @@ endbfrange
 <f097ba80> <f097babf> <d81fde80>
 <f097bb80> <f097bbbf> <d81fdec0>
 <f097bc80> <f097bcbf> <d81fdf00>
+endbfrange
+
+100 beginbfrange
 <f097bd80> <f097bdbf> <d81fdf40>
 <f097be80> <f097bebf> <d81fdf80>
 <f097bf80> <f097bfbf> <d81fdfc0>
 <f0988080> <f09880bf> <d820dc00>
 <f0988180> <f09881bf> <d820dc40>
-endbfrange
-
-100 beginbfrange
 <f0988280> <f09882bf> <d820dc80>
 <f0988380> <f09883bf> <d820dcc0>
 <f0988480> <f09884bf> <d820dd00>
@@ -1354,6 +1359,14 @@ endbfrange
 <f09b8180> <f09b81bf> <d82cdc40>
 <f09b8280> <f09b82bf> <d82cdc80>
 <f09b8380> <f09b83bf> <d82cdcc0>
+<f09b8480> <f09b84bf> <d82cdd00>
+<f09b8580> <f09b85bf> <d82cdd40>
+<f09b8680> <f09b86bf> <d82cdd80>
+<f09b8780> <f09b87bf> <d82cddc0>
+<f09b8880> <f09b88bf> <d82cde00>
+<f09b8980> <f09b89bf> <d82cde40>
+<f09b8a80> <f09b8abf> <d82cde80>
+<f09b8b80> <f09b8bbf> <d82cdec0>
 <f09bb080> <f09bb0bf> <d82fdc00>
 <f09bb180> <f09bb1bf> <d82fdc40>
 <f09bb280> <f09bb2bf> <d82fdc80>
@@ -1395,6 +1408,9 @@ endbfrange
 <f09da780> <f09da7bf> <d836ddc0>
 <f09da880> <f09da8bf> <d836de00>
 <f09da980> <f09da9bf> <d836de40>
+endbfrange
+
+100 beginbfrange
 <f09daa80> <f09daabf> <d836de80>
 <f09e8080> <f09e80bf> <d838dc00>
 <f09ea080> <f09ea0bf> <d83adc00>
@@ -1408,9 +1424,6 @@ endbfrange
 <f09eba80> <f09ebabf> <d83bde80>
 <f09ebb80> <f09ebbbf> <d83bdec0>
 <f09f8080> <f09f80bf> <d83cdc00>
-endbfrange
-
-100 beginbfrange
 <f09f8180> <f09f81bf> <d83cdc40>
 <f09f8280> <f09f82bf> <d83cdc80>
 <f09f8380> <f09f83bf> <d83cdcc0>
@@ -1498,6 +1511,9 @@ endbfrange
 <f0a0ad80> <f0a0adbf> <d842df40>
 <f0a0ae80> <f0a0aebf> <d842df80>
 <f0a0af80> <f0a0afbf> <d842dfc0>
+endbfrange
+
+100 beginbfrange
 <f0a0b080> <f0a0b0bf> <d843dc00>
 <f0a0b180> <f0a0b1bf> <d843dc40>
 <f0a0b280> <f0a0b2bf> <d843dc80>
@@ -1511,9 +1527,6 @@ endbfrange
 <f0a0ba80> <f0a0babf> <d843de80>
 <f0a0bb80> <f0a0bbbf> <d843dec0>
 <f0a0bc80> <f0a0bcbf> <d843df00>
-endbfrange
-
-100 beginbfrange
 <f0a0bd80> <f0a0bdbf> <d843df40>
 <f0a0be80> <f0a0bebf> <d843df80>
 <f0a0bf80> <f0a0bfbf> <d843dfc0>
@@ -1601,6 +1614,9 @@ endbfrange
 <f0a29180> <f0a291bf> <d849dc40>
 <f0a29280> <f0a292bf> <d849dc80>
 <f0a29380> <f0a293bf> <d849dcc0>
+endbfrange
+
+100 beginbfrange
 <f0a29480> <f0a294bf> <d849dd00>
 <f0a29580> <f0a295bf> <d849dd40>
 <f0a29680> <f0a296bf> <d849dd80>
@@ -1614,9 +1630,6 @@ endbfrange
 <f0a29e80> <f0a29ebf> <d849df80>
 <f0a29f80> <f0a29fbf> <d849dfc0>
 <f0a2a080> <f0a2a0bf> <d84adc00>
-endbfrange
-
-100 beginbfrange
 <f0a2a180> <f0a2a1bf> <d84adc40>
 <f0a2a280> <f0a2a2bf> <d84adc80>
 <f0a2a380> <f0a2a3bf> <d84adcc0>
@@ -1704,6 +1717,9 @@ endbfrange
 <f0a3b580> <f0a3b5bf> <d84fdd40>
 <f0a3b680> <f0a3b6bf> <d84fdd80>
 <f0a3b780> <f0a3b7bf> <d84fddc0>
+endbfrange
+
+100 beginbfrange
 <f0a3b880> <f0a3b8bf> <d84fde00>
 <f0a3b980> <f0a3b9bf> <d84fde40>
 <f0a3ba80> <f0a3babf> <d84fde80>
@@ -1717,9 +1733,6 @@ endbfrange
 <f0a48280> <f0a482bf> <d850dc80>
 <f0a48380> <f0a483bf> <d850dcc0>
 <f0a48480> <f0a484bf> <d850dd00>
-endbfrange
-
-100 beginbfrange
 <f0a48580> <f0a485bf> <d850dd40>
 <f0a48680> <f0a486bf> <d850dd80>
 <f0a48780> <f0a487bf> <d850ddc0>
@@ -1807,6 +1820,9 @@ endbfrange
 <f0a59980> <f0a599bf> <d855de40>
 <f0a59a80> <f0a59abf> <d855de80>
 <f0a59b80> <f0a59bbf> <d855dec0>
+endbfrange
+
+100 beginbfrange
 <f0a59c80> <f0a59cbf> <d855df00>
 <f0a59d80> <f0a59dbf> <d855df40>
 <f0a59e80> <f0a59ebf> <d855df80>
@@ -1820,9 +1836,6 @@ endbfrange
 <f0a5a680> <f0a5a6bf> <d856dd80>
 <f0a5a780> <f0a5a7bf> <d856ddc0>
 <f0a5a880> <f0a5a8bf> <d856de00>
-endbfrange
-
-100 beginbfrange
 <f0a5a980> <f0a5a9bf> <d856de40>
 <f0a5aa80> <f0a5aabf> <d856de80>
 <f0a5ab80> <f0a5abbf> <d856dec0>
@@ -1910,6 +1923,9 @@ endbfrange
 <f0a6bd80> <f0a6bdbf> <d85bdf40>
 <f0a6be80> <f0a6bebf> <d85bdf80>
 <f0a6bf80> <f0a6bfbf> <d85bdfc0>
+endbfrange
+
+100 beginbfrange
 <f0a78080> <f0a780bf> <d85cdc00>
 <f0a78180> <f0a781bf> <d85cdc40>
 <f0a78280> <f0a782bf> <d85cdc80>
@@ -1923,9 +1939,6 @@ endbfrange
 <f0a78a80> <f0a78abf> <d85cde80>
 <f0a78b80> <f0a78bbf> <d85cdec0>
 <f0a78c80> <f0a78cbf> <d85cdf00>
-endbfrange
-
-100 beginbfrange
 <f0a78d80> <f0a78dbf> <d85cdf40>
 <f0a78e80> <f0a78ebf> <d85cdf80>
 <f0a78f80> <f0a78fbf> <d85cdfc0>
@@ -2013,6 +2026,9 @@ endbfrange
 <f0a8a180> <f0a8a1bf> <d862dc40>
 <f0a8a280> <f0a8a2bf> <d862dc80>
 <f0a8a380> <f0a8a3bf> <d862dcc0>
+endbfrange
+
+100 beginbfrange
 <f0a8a480> <f0a8a4bf> <d862dd00>
 <f0a8a580> <f0a8a5bf> <d862dd40>
 <f0a8a680> <f0a8a6bf> <d862dd80>
@@ -2026,9 +2042,6 @@ endbfrange
 <f0a8ae80> <f0a8aebf> <d862df80>
 <f0a8af80> <f0a8afbf> <d862dfc0>
 <f0a8b080> <f0a8b0bf> <d863dc00>
-endbfrange
-
-100 beginbfrange
 <f0a8b180> <f0a8b1bf> <d863dc40>
 <f0a8b280> <f0a8b2bf> <d863dc80>
 <f0a8b380> <f0a8b3bf> <d863dcc0>
@@ -2116,6 +2129,9 @@ endbfrange
 <f0aa8580> <f0aa85bf> <d868dd40>
 <f0aa8680> <f0aa86bf> <d868dd80>
 <f0aa8780> <f0aa87bf> <d868ddc0>
+endbfrange
+
+100 beginbfrange
 <f0aa8880> <f0aa88bf> <d868de00>
 <f0aa8980> <f0aa89bf> <d868de40>
 <f0aa8a80> <f0aa8abf> <d868de80>
@@ -2129,9 +2145,6 @@ endbfrange
 <f0aa9280> <f0aa92bf> <d869dc80>
 <f0aa9380> <f0aa93bf> <d869dcc0>
 <f0aa9480> <f0aa94bf> <d869dd00>
-endbfrange
-
-100 beginbfrange
 <f0aa9580> <f0aa95bf> <d869dd40>
 <f0aa9680> <f0aa96bf> <d869dd80>
 <f0aa9780> <f0aa97bf> <d869ddc0>
@@ -2219,6 +2232,9 @@ endbfrange
 <f0aba980> <f0aba9bf> <d86ede40>
 <f0abaa80> <f0abaabf> <d86ede80>
 <f0abab80> <f0ababbf> <d86edec0>
+endbfrange
+
+100 beginbfrange
 <f0abac80> <f0abacbf> <d86edf00>
 <f0abad80> <f0abadbf> <d86edf40>
 <f0abae80> <f0abaebf> <d86edf80>
@@ -2232,9 +2248,6 @@ endbfrange
 <f0abb680> <f0abb6bf> <d86fdd80>
 <f0abb780> <f0abb7bf> <d86fddc0>
 <f0abb880> <f0abb8bf> <d86fde00>
-endbfrange
-
-81 beginbfrange
 <f0abb980> <f0abb9bf> <d86fde40>
 <f0abba80> <f0abbabf> <d86fde80>
 <f0abbb80> <f0abbbbf> <d86fdec0>
@@ -2301,10 +2314,133 @@ endbfrange
 <f0acb880> <f0acb8bf> <d873de00>
 <f0acb980> <f0acb9bf> <d873de40>
 <f0acba80> <f0acbabf> <d873de80>
+<f0acbb80> <f0acbbbf> <d873dec0>
+<f0acbc80> <f0acbcbf> <d873df00>
+<f0acbd80> <f0acbdbf> <d873df40>
+<f0acbe80> <f0acbebf> <d873df80>
+<f0acbf80> <f0acbfbf> <d873dfc0>
+<f0ad8080> <f0ad80bf> <d874dc00>
+<f0ad8180> <f0ad81bf> <d874dc40>
+<f0ad8280> <f0ad82bf> <d874dc80>
+<f0ad8380> <f0ad83bf> <d874dcc0>
+<f0ad8480> <f0ad84bf> <d874dd00>
+<f0ad8580> <f0ad85bf> <d874dd40>
+<f0ad8680> <f0ad86bf> <d874dd80>
+<f0ad8780> <f0ad87bf> <d874ddc0>
+<f0ad8880> <f0ad88bf> <d874de00>
+<f0ad8980> <f0ad89bf> <d874de40>
+<f0ad8a80> <f0ad8abf> <d874de80>
+<f0ad8b80> <f0ad8bbf> <d874dec0>
+<f0ad8c80> <f0ad8cbf> <d874df00>
+<f0ad8d80> <f0ad8dbf> <d874df40>
+<f0ad8e80> <f0ad8ebf> <d874df80>
+<f0ad8f80> <f0ad8fbf> <d874dfc0>
+endbfrange
+
+100 beginbfrange
+<f0ad9080> <f0ad90bf> <d875dc00>
+<f0ad9180> <f0ad91bf> <d875dc40>
+<f0ad9280> <f0ad92bf> <d875dc80>
+<f0ad9380> <f0ad93bf> <d875dcc0>
+<f0ad9480> <f0ad94bf> <d875dd00>
+<f0ad9580> <f0ad95bf> <d875dd40>
+<f0ad9680> <f0ad96bf> <d875dd80>
+<f0ad9780> <f0ad97bf> <d875ddc0>
+<f0ad9880> <f0ad98bf> <d875de00>
+<f0ad9980> <f0ad99bf> <d875de40>
+<f0ad9a80> <f0ad9abf> <d875de80>
+<f0ad9b80> <f0ad9bbf> <d875dec0>
+<f0ad9c80> <f0ad9cbf> <d875df00>
+<f0ad9d80> <f0ad9dbf> <d875df40>
+<f0ad9e80> <f0ad9ebf> <d875df80>
+<f0ad9f80> <f0ad9fbf> <d875dfc0>
+<f0ada080> <f0ada0bf> <d876dc00>
+<f0ada180> <f0ada1bf> <d876dc40>
+<f0ada280> <f0ada2bf> <d876dc80>
+<f0ada380> <f0ada3bf> <d876dcc0>
+<f0ada480> <f0ada4bf> <d876dd00>
+<f0ada580> <f0ada5bf> <d876dd40>
+<f0ada680> <f0ada6bf> <d876dd80>
+<f0ada780> <f0ada7bf> <d876ddc0>
+<f0ada880> <f0ada8bf> <d876de00>
+<f0ada980> <f0ada9bf> <d876de40>
+<f0adaa80> <f0adaabf> <d876de80>
+<f0adab80> <f0adabbf> <d876dec0>
+<f0adac80> <f0adacbf> <d876df00>
+<f0adad80> <f0adadbf> <d876df40>
+<f0adae80> <f0adaebf> <d876df80>
+<f0adaf80> <f0adafbf> <d876dfc0>
+<f0adb080> <f0adb0bf> <d877dc00>
+<f0adb180> <f0adb1bf> <d877dc40>
+<f0adb280> <f0adb2bf> <d877dc80>
+<f0adb380> <f0adb3bf> <d877dcc0>
+<f0adb480> <f0adb4bf> <d877dd00>
+<f0adb580> <f0adb5bf> <d877dd40>
+<f0adb680> <f0adb6bf> <d877dd80>
+<f0adb780> <f0adb7bf> <d877ddc0>
+<f0adb880> <f0adb8bf> <d877de00>
+<f0adb980> <f0adb9bf> <d877de40>
+<f0adba80> <f0adbabf> <d877de80>
+<f0adbb80> <f0adbbbf> <d877dec0>
+<f0adbc80> <f0adbcbf> <d877df00>
+<f0adbd80> <f0adbdbf> <d877df40>
+<f0adbe80> <f0adbebf> <d877df80>
+<f0adbf80> <f0adbfbf> <d877dfc0>
+<f0ae8080> <f0ae80bf> <d878dc00>
+<f0ae8180> <f0ae81bf> <d878dc40>
+<f0ae8280> <f0ae82bf> <d878dc80>
+<f0ae8380> <f0ae83bf> <d878dcc0>
+<f0ae8480> <f0ae84bf> <d878dd00>
+<f0ae8580> <f0ae85bf> <d878dd40>
+<f0ae8680> <f0ae86bf> <d878dd80>
+<f0ae8780> <f0ae87bf> <d878ddc0>
+<f0ae8880> <f0ae88bf> <d878de00>
+<f0ae8980> <f0ae89bf> <d878de40>
+<f0ae8a80> <f0ae8abf> <d878de80>
+<f0ae8b80> <f0ae8bbf> <d878dec0>
+<f0ae8c80> <f0ae8cbf> <d878df00>
+<f0ae8d80> <f0ae8dbf> <d878df40>
+<f0ae8e80> <f0ae8ebf> <d878df80>
+<f0ae8f80> <f0ae8fbf> <d878dfc0>
+<f0ae9080> <f0ae90bf> <d879dc00>
+<f0ae9180> <f0ae91bf> <d879dc40>
+<f0ae9280> <f0ae92bf> <d879dc80>
+<f0ae9380> <f0ae93bf> <d879dcc0>
+<f0ae9480> <f0ae94bf> <d879dd00>
+<f0ae9580> <f0ae95bf> <d879dd40>
+<f0ae9680> <f0ae96bf> <d879dd80>
+<f0ae9780> <f0ae97bf> <d879ddc0>
+<f0ae9880> <f0ae98bf> <d879de00>
+<f0ae9980> <f0ae99bf> <d879de40>
+<f0ae9a80> <f0ae9abf> <d879de80>
+<f0ae9b80> <f0ae9bbf> <d879dec0>
+<f0ae9c80> <f0ae9cbf> <d879df00>
+<f0ae9d80> <f0ae9dbf> <d879df40>
+<f0ae9e80> <f0ae9ebf> <d879df80>
+<f0ae9f80> <f0ae9fbf> <d879dfc0>
+<f0aea080> <f0aea0bf> <d87adc00>
+<f0aea180> <f0aea1bf> <d87adc40>
+<f0aea280> <f0aea2bf> <d87adc80>
+<f0aea380> <f0aea3bf> <d87adcc0>
+<f0aea480> <f0aea4bf> <d87add00>
+<f0aea580> <f0aea5bf> <d87add40>
+<f0aea680> <f0aea6bf> <d87add80>
+<f0aea780> <f0aea7bf> <d87addc0>
+<f0aea880> <f0aea8bf> <d87ade00>
+<f0aea980> <f0aea9bf> <d87ade40>
+<f0aeaa80> <f0aeaabf> <d87ade80>
+<f0aeab80> <f0aeabbf> <d87adec0>
+<f0aeac80> <f0aeacbf> <d87adf00>
+<f0aead80> <f0aeadbf> <d87adf40>
+<f0aeae80> <f0aeaebf> <d87adf80>
+<f0aeaf80> <f0aeafbf> <d87adfc0>
 <f0afa080> <f0afa0bf> <d87edc00>
 <f0afa180> <f0afa1bf> <d87edc40>
 <f0afa280> <f0afa2bf> <d87edc80>
 <f0afa380> <f0afa3bf> <d87edcc0>
+endbfrange
+
+11 beginbfrange
 <f0afa480> <f0afa4bf> <d87edd00>
 <f0afa580> <f0afa5bf> <d87edd40>
 <f0afa680> <f0afa6bf> <d87edd80>

@@ -57,6 +57,7 @@
    )
 (CHARSINTYPE O 3
    、 ， 。 ． ・ ： ；
+   U00B7
    )
 (CHARSINTYPE O 4
    — ― … ‥

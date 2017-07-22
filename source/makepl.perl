@@ -40,6 +40,12 @@ if ($charsintype==2 && /\)/) {
 END
     $charsintype=undef;
 }
+if ($charsintype==3 && /\)/) {
+    print <<END;
+   U00B7 
+END
+    $charsintype=undef;
+}
 if ($charsintype==5) {
     s/\x{2014}|\x{2015}/\x{2014} \x{2015}/g;
 }

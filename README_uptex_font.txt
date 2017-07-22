@@ -18,6 +18,7 @@ Setting in addition to jis.tfm:
 jis.tfm などから追加した設定:
 Type1: U+FF5F U+3018 U+3016 U+301D 
 Type2: U+FF60 U+3019 U+3017 U+301F 
+Type3: U+00B7 
 Type5: JIS 0x213D -> U+2014 and U+2015
 
                   men-ku-ten
@@ -30,6 +31,7 @@ U+FF60: JIS X 0213  1-02-55 終わり二重バーレーン
 U+3019: JIS X 0213  1-02-57 終わり二重亀甲括弧
 U+3017: JIS X 0213  1-02-59 終わりすみ付き括弧(白)
 U+301F: JIS X 0213  1-13-65 終わりダブルミニュート
+U+00B7: JIS X 0213  1-09-14 中点（ラテン）
 
 U+2014: EM DASH
 U+2015: HORIZONTAL BAR

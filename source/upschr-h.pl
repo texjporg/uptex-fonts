@@ -1,5 +1,5 @@
 (COMMENT THIS IS A KANJI FORMAT FILE)
-(FAMILY UPJIS KANJI)
+(FAMILY UPSCH KANJI)
 (FACE F MRR)
 (CODINGSCHEME TEX KANJI TEXT)
 (DESIGNSIZE R 10.0)
@@ -57,16 +57,16 @@
    UFF5F U3018 U3016 U301D 
    )
 (CHARSINTYPE O 2
-   、 ， ’ ” ） 〕 ］ ｝ 〉 》
+   、 ， ： ； ’ ” ） 〕 ］ ｝ 〉 》
    」 』 】
    UFF60 U3019 U3017 U301F 
    )
 (CHARSINTYPE O 3
-   ・ ： ；
+   ・
    U00B7 
    )
 (CHARSINTYPE O 4
-   。 ．
+   。 ． ？ ！
    )
 (CHARSINTYPE O 5
    — ― … ‥

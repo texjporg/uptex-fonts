@@ -38,8 +38,8 @@ U+2015: HORIZONTAL BAR
         JIS X 0208    01-29 ダッシュ(全角) (0x213D)
         JIS X 0213  1-01-29 ダッシュ(全角)
 
-JIS -> Unicode conversion is ambiguos and depends on tables.
-0x213D -> U+2014 : JIS, Macintosh, nkf, JavaJRE1.4.0 or lator
+JIS -> Unicode conversion is ambiguous and depends on tables.
+0x213D -> U+2014 : JIS, Macintosh, nkf, JavaJRE1.4.0 or later
 0x213D -> U+2015 : Windows, gd, JavaJRE1.3.1, upTeX
 
 

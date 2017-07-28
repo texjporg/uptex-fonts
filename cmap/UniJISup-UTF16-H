@@ -1,9 +1,9 @@
 %!PS-Adobe-3.0 Resource-CMap
 %%DocumentNeededResources: ProcSet (CIDInit)
 %%IncludeResource: ProcSet (CIDInit)
-%%BeginResource: CMap (UniJIS-UTF16-H)
-%%Title: (UniJIS-UTF16-H Adobe Japan1 6)
-%%Version: 1.023
+%%BeginResource: CMap (UniJISup-UTF16-H)
+%%Title: (UniJISup-UTF16-H Adobe Japan1 6)
+%%Version: 0.001
 %%Copyright: -----------------------------------------------------------
 %%Copyright: Copyright 1990-2017 Adobe Systems Incorporated.
 %%Copyright: All rights reserved.
@@ -54,8 +54,8 @@ begincmap
   /Supplement 6 def
 end def
 
-/CMapName /UniJIS-UTF16-H def
-/CMapVersion 1.023 def
+/CMapName /UniJISup-UTF16-H def
+/CMapVersion 0.001 def
 /CMapType 1 def
 
 /XUID [1 10 25611] def
@@ -403,11 +403,11 @@ endcidchar
 <2014> 138
 <2015> 661
 <2016> 666
-<2018> 98
-<2019> 96
+<2018> 670
+<2019> 671
 <201a> 120
-<201c> 108
-<201d> 122
+<201c> 672
+<201d> 673
 <201e> 121
 <2022> 119
 <2025> 669

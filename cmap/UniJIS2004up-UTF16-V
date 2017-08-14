@@ -1,11 +1,11 @@
 %!PS-Adobe-3.0 Resource-CMap
 %%DocumentNeededResources: ProcSet (CIDInit)
-%%DocumentNeededResources: CMap (UniJIS2004-UTF16-H)
+%%DocumentNeededResources: CMap (UniJIS2004up-UTF16-H)
 %%IncludeResource: ProcSet (CIDInit)
-%%IncludeResource: CMap (UniJIS2004-UTF16-H)
-%%BeginResource: CMap (UniJIS2004-UTF16-V)
-%%Title: (UniJIS2004-UTF16-V Adobe Japan1 6)
-%%Version: 1.004
+%%IncludeResource: CMap (UniJIS2004up-UTF16-H)
+%%BeginResource: CMap (UniJIS2004up-UTF16-V)
+%%Title: (UniJIS2004up-UTF16-V Adobe Japan1 6)
+%%Version: 0.001
 %%Copyright: -----------------------------------------------------------
 %%Copyright: Copyright 1990-2015 Adobe Systems Incorporated.
 %%Copyright: All rights reserved.
@@ -50,7 +50,7 @@
 
 begincmap
 
-/UniJIS2004-UTF16-H usecmap
+/UniJIS2004up-UTF16-H usecmap
 
 /CIDSystemInfo 3 dict dup begin
   /Registry (Adobe) def
@@ -58,8 +58,8 @@ begincmap
   /Supplement 6 def
 end def
 
-/CMapName /UniJIS2004-UTF16-V def
-/CMapVersion 1.004 def
+/CMapName /UniJIS2004up-UTF16-V def
+/CMapVersion 0.001 def
 /CMapType 1 def
 
 /XUID [1 10 25630] def
@@ -71,6 +71,10 @@ end def
 <2010> 7893
 <2015> 7892
 <2016> 7895
+<2018> 12173
+<2019> 12174
+<201c> 7956
+<201d> 7957
 <2025> 7898
 <2026> 7897
 <2032> 8273
@@ -163,13 +167,13 @@ end def
 <3047> 7921
 <3049> 7922
 <3063> 7923
+endcidchar
+
+87 begincidchar
 <3083> 7924
 <3085> 7925
 <3087> 7926
 <308e> 7927
-endcidchar
-
-78 begincidchar
 <309b> 8272
 <309c> 8271
 <30a0> 16331
@@ -236,9 +240,14 @@ endcidchar
 <3353> 12038
 <3354> 12035
 <3357> 8344
+<337b> 12044
+<337c> 12043
+<337d> 12042
+<337e> 12041
 <337f> 8324
 <ff0c> 8268
 <ff0e> 8274
+<ff1a> 12101
 <ff1d> 7917
 <ff3b> 7903
 <ff3d> 7904

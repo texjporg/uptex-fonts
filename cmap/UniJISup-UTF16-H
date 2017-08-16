@@ -41,6 +41,7 @@
 %%Copyright: OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 %%Copyright: SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %%Copyright: -----------------------------------------------------------
+%%comment: XUID is omitted.
 %%EndComments
 
 /CIDInit /ProcSet findresource begin
@@ -58,8 +59,6 @@ end def
 /CMapName /UniJISup-UTF16-H def
 /CMapVersion 0.001 def
 /CMapType 1 def
-
-/XUID [1 10 25611] def
 
 /WMode 0 def
 

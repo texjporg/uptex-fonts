@@ -3,7 +3,7 @@
 %%IncludeResource: ProcSet (CIDInit)
 %%BeginResource: CMap (UniJIS2004up-UTF16-H)
 %%Title: (UniJIS2004up-UTF16-H Adobe Japan1 6)
-%%Version: 0.001
+%%Version: 1.000
 %%Copyright: -----------------------------------------------------------
 %%Copyright: Copyright 1990-2017 Adobe Systems Incorporated.
 %%Copyright: Copyright 2017 Japanese TeX Development Community
@@ -41,6 +41,7 @@
 %%Copyright: OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 %%Copyright: SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %%Copyright: -----------------------------------------------------------
+%%comment: This CMap is based on UniJIS2004-UTF16-H Version 1.018 and modified.
 %%comment: XUID is omitted.
 %%EndComments
 
@@ -57,7 +58,7 @@ begincmap
 end def
 
 /CMapName /UniJIS2004up-UTF16-H def
-/CMapVersion 0.001 def
+/CMapVersion 1.000 def
 /CMapType 1 def
 
 /WMode 0 def

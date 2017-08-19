@@ -52,7 +52,7 @@ CID mapping memo
 |LEFTWARDS BLACK ARROW | U+2B05 |  8207  | (8207)  |
 |UPWARDS BLACK ARROW   | U+2B06 |  8208  | (8208)  |
 |DOWNWARDS BLACK ARROW | U+2B07 |  8209  | (8209)  |
-|RIGHTWARDS BLACK ARROW| U+2B95 |   ---  |  ---    |
+|RIGHTWARDS BLACK ARROW| U+2B95 |  8206  | (8206)  |
 
 |                      | UCS    | UniJISup-UTF16-H | -V   |
 |----------------------|--------|:------:|:-------:|
@@ -60,7 +60,7 @@ CID mapping memo
 |LEFTWARDS BLACK ARROW | U+2B05 |  8207  | [8208]  |
 |UPWARDS BLACK ARROW   | U+2B06 |  8208  | [8206]  |
 |DOWNWARDS BLACK ARROW | U+2B07 |  8209  | [8207]  |
-|RIGHTWARDS BLACK ARROW| U+2B95 |   ---  |  ---    |
+|RIGHTWARDS BLACK ARROW| U+2B95 |  8206  | [8209]  |
 
 UniJISup-UTF16-V では、上記の表以外に UniJISPro-UCS2-V に倣って
 U+337B..U+337E の縦組み字形 12044..12041 を追加。

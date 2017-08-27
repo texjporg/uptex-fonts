@@ -1,9 +1,9 @@
 MAKEJVF =  makejvf
 TFTOPL  = uptftopl -kanji=utf8
 PLTOTF  = uppltotf -kanji=uptex
+MAKEJVFJ3 = $(MAKEJVF) -i -u jis -3
 MAKEJVFG3 = $(MAKEJVF) -i -u gb -3
 MAKEJVFC3 = $(MAKEJVF) -i -u cns -3
-MAKEJVFJ3 = $(MAKEJVF) -i -u jis -3
 MAKEJVFK  = $(MAKEJVF) -i -u ks
 MAKEJVFJ  = $(MAKEJVF) -i -u jis
 MAKEJVFJQ = $(MAKEJVF) -i -u jisq

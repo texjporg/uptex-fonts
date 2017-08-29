@@ -27,14 +27,14 @@ tfm:
 		$(PLTOTF) upjisr-v.pl $$fnt-v.tfm ; \
 	done
 	for hv in h v ; do \
-	for fnt in upkorrm upkorgt uptchrm uptchgt ; do \
+	for fnt in upkorrm upkorgt ; do \
 		$(PLTOTF) upjisr-$$hv.pl $$fnt-$$hv.tfm ; \
 	done ; \
 	for fnt in upschrm upschgt ; do \
 		$(PLTOTF) upschr-$$hv.pl $$fnt-$$hv.tfm ; \
 	done ; \
-	for fnt in uptchcrm uptchcgt ; do \
-		$(PLTOTF) uptchcr-$$hv.pl $$fnt-$$hv.tfm ; \
+	for fnt in uptchrm uptchgt ; do \
+		$(PLTOTF) uptchr-$$hv.pl $$fnt-$$hv.tfm ; \
 	done ; \
 	done
 	for fnt in upjisr-hq upjisg-hq ; do \
@@ -83,10 +83,6 @@ vf:
 	$(MAKEJVFC3) -e uptchgt-h.tfm upmhm-h
 	$(MAKEJVFC3) -e uptchrm-v.tfm upmsl-v
 	$(MAKEJVFC3) -e uptchgt-v.tfm upmhm-v
-	$(MAKEJVFC3) -e uptchcrm-h.tfm upmsl-h
-	$(MAKEJVFC3) -e uptchcgt-h.tfm upmhm-h
-	$(MAKEJVFC3) -e uptchcrm-v.tfm upmsl-v
-	$(MAKEJVFC3) -e uptchcgt-v.tfm upmhm-v
 
 move:
 	mkdir -pv ../tfm ../vf

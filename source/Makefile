@@ -1,12 +1,13 @@
 MAKEJVF =  makejvf
 TFTOPL  = uptftopl -kanji=utf8
 PLTOTF  = uppltotf -kanji=uptex
+MAKEJVFJ3 = $(MAKEJVF) -i -u jis -3
 MAKEJVFG3 = $(MAKEJVF) -i -u gb -3
 MAKEJVFC3 = $(MAKEJVF) -i -u cns -3
-MAKEJVFJ3 = $(MAKEJVF) -i -u jis -3
 MAKEJVFK  = $(MAKEJVF) -i -u ks
 MAKEJVFJ  = $(MAKEJVF) -i -u jis
 MAKEJVFJQ = $(MAKEJVF) -i -u jisq
+MAKEJVFX  = $(MAKEJVF) -i -u custom
 
 all: tfm vf pstfm
 
@@ -52,16 +53,24 @@ pstfm:
 	done
 
 vf:
-	$(MAKEJVFJ) -e -H -U upjisr-hq upjisr-h.tfm uprml-h
-	$(MAKEJVFJ) -e -H -U upjisg-hq upjisg-h.tfm upgbm-h
-	$(MAKEJVFJ) -e upjisr-v.tfm uprml-v
-	$(MAKEJVFJ) -e upjisg-v.tfm upgbm-v
+#	$(MAKEJVFJ) -e -H -U upjisr-hq upjisr-h.tfm uprml-h
+#	$(MAKEJVFJ) -e -H -U upjisg-hq upjisg-h.tfm upgbm-h
+#	$(MAKEJVFJ) -e upjisr-v.tfm uprml-v
+#	$(MAKEJVFJ) -e upjisg-v.tfm upgbm-v
+	$(MAKEJVFX) -e -t makejvf-upjis.cnf -H -U upjisr-hq upjisr-h.tfm uprml-h
+	$(MAKEJVFX) -e -t makejvf-upjis.cnf -H -U upjisg-hq upjisg-h.tfm upgbm-h
+	$(MAKEJVFX) -e -t makejvf-upjis.cnf upjisr-v.tfm uprml-v
+	$(MAKEJVFX) -e -t makejvf-upjis.cnf upjisg-v.tfm upgbm-v
 	$(MAKEJVFJQ) -e upjisr-hq.tfm uprml-hq
 	$(MAKEJVFJQ) -e upjisg-hq.tfm upgbm-hq
-	$(MAKEJVFJ3) -e -H -U upjisr-hq upjpnrm-h.tfm uprml-h
-	$(MAKEJVFJ3) -e -H -U upjisg-hq upjpngt-h.tfm upgbm-h
-	$(MAKEJVFJ3) -e upjpnrm-v.tfm uprml-v
-	$(MAKEJVFJ3) -e upjpngt-v.tfm upgbm-v
+#	$(MAKEJVFJ3) -e -H -U upjisr-hq upjpnrm-h.tfm uprml-h
+#	$(MAKEJVFJ3) -e -H -U upjisg-hq upjpngt-h.tfm upgbm-h
+#	$(MAKEJVFJ3) -e upjpnrm-v.tfm uprml-v
+#	$(MAKEJVFJ3) -e upjpngt-v.tfm upgbm-v
+	$(MAKEJVFX) -e -t makejvf-upjpn.cnf -H -U upjisr-hq upjpnrm-h.tfm uprml-h
+	$(MAKEJVFX) -e -t makejvf-upjpn.cnf -H -U upjisg-hq upjpngt-h.tfm upgbm-h
+	$(MAKEJVFX) -e -t makejvf-upjpn.cnf upjpnrm-v.tfm uprml-v
+	$(MAKEJVFX) -e -t makejvf-upjpn.cnf upjpngt-v.tfm upgbm-v
 	$(MAKEJVFK) -e upkorrm-h.tfm uphysmjm-h
 	$(MAKEJVFK) -e upkorgt-h.tfm uphygt-h
 	$(MAKEJVFK) -e upkorrm-v.tfm uphysmjm-v

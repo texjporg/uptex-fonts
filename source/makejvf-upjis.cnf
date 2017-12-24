@@ -1,6 +1,6 @@
 % makejvf settings for upjis* in uptex-fonts
-% based on Blocks-9.0.0.txt (Date: 2016-02-05, 23:48:00 GMT [KW])
-% and cmapresources_japan1-6/cid2code.txt (Version 08/13/2012)
+% based on Blocks-10.0.0.txt (Date: 2017-04-12, 17:30:00 GMT [KW])
+% and Adobe-Japan1-6/cid2code.txt (Version 10/24/2017)
 
 CHARSET	0000..007F,% Basic Latin
 +	0080..00FF,% Latin-1 Supplement
@@ -11,6 +11,7 @@ CHARSET	0000..007F,% Basic Latin
 +	0300..036F,% Combining Diacritical Marks
 +	0370..03FF,% Greek and Coptic
 +	0400..04FF,% Cyrillic
++	0F00..0FFF,% Tibetan
 +	1E00..1EFF,% Latin Extended Additional
 +	1F00..1FFF,% Greek Extended
 +	2000..206F,% General Punctuation
@@ -32,6 +33,7 @@ CHARSET	0000..007F,% Basic Latin
 +	2900..297F,% Supplemental Arrows-B
 +	2980..29FF,% Miscellaneous Mathematical Symbols-B
 +	2B00..2BFF,% Miscellaneous Symbols and Arrows
++	2E00..2E7F,% Supplemental Punctuation
 +	2E80..2EFF,% CJK Radicals Supplement
 +	2F00..2FDF,% Kangxi Radicals
 +	3000..303F,% CJK Symbols and Punctuation
@@ -43,6 +45,8 @@ CHARSET	0000..007F,% Basic Latin
 +	3300..33FF,% CJK Compatibility
 +	3400..4DBF,% CJK Unified Ideographs Extension A
 +	4E00..9FFF,% CJK Unified Ideographs
++	A720..A7FF,% Latin Extended-D
++	AB30..AB6F,% Latin Extended-E
 +	E000..F8FF,% Private Use Area
 +	F900..FAFF,% CJK Compatibility Ideographs
 +	FB00..FB4F,% Alphabetic Presentation Forms

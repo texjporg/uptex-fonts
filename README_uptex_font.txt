@@ -45,6 +45,15 @@ JIS -> Unicode conversion is ambiguous and depends on tables.
 
 #### ChangeLog
 
+uptex-fonts-201801xx
+  * cmap/UTF8-UTF16:
+    Updated (Version: 1.004).
+  * cmap/cid_mapping.md,UniJISup-UTF16-{H,V},UniJIS2004up-UTF16-{H,V}:
+    New CMap files and document on the new cid mapping.
+  * source/Makefile,makejvf-upjis.cnf,makejvf-upjpn.cnf:
+    Added characters of Supplementary Ideographic Plane to upjis*.vf
+    Added CJK Unified Ideographs Extension F to upjpn*.vf & upcns*.vf
+
 uptex-1.00 [2012/01/15] TTK
   * re-package for upTeX/upLaTeX Ver.1.00 distribution.
   * makepl.perl, upjisr-h{,-hk}.pl, upjisr-v.pl,

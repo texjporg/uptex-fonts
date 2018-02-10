@@ -47,6 +47,7 @@ mv $TMP/$PROJECT/vf/*10* $TMP/$PROJECT/fonts/vf/$PROJECT/min
 mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/jis
 mv $TMP/$PROJECT/vf/up* $TMP/$PROJECT/fonts/vf/$PROJECT/jis
 
+rm $TMP/$PROJECT/Makefile
 rmdir $TMP/$PROJECT/{cmap,tfm,vf}
 
 cd $TMP/$PROJECT && zip -r $TMP/$PROJECT.tds.zip *
@@ -57,6 +58,7 @@ echo
 echo " * Create $PROJECT.zip ($RELEASEDATE)"
 git archive --format=tar --prefix=$PROJECT/ HEAD | (cd $TMP && tar xf -)
 rm $TMP/$PROJECT/create_archive.sh
+rm $TMP/$PROJECT/Makefile
 rm -rf $TMP/$PROJECT/00uptex-0.30
 perl -pi.bak -e "s/\\\$RELEASEDATE/$RELEASEDATE/g" $TMP/$PROJECT/README.md
 rm -f $TMP/$PROJECT/README.md.bak

@@ -30,13 +30,13 @@ if (/CHARWD|FONTAT|MOVERIGHT|QUAD|GLUE/) {
 
 if ($charsintype==1 && /\)/) {
     print <<END;
-   UFF5F U3018 U3016 U301D 
+   UFF5F U3018 U3016 U301D U00AB 
 END
     $charsintype=undef;
 }
 if ($charsintype==2 && /\)/) {
     print <<END;
-   UFF60 U3019 U3017 U301F 
+   UFF60 U3019 U3017 U301F U00BB 
 END
     $charsintype=undef;
 }

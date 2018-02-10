@@ -23,12 +23,15 @@ mv $TMP/$PROJECT/README.md $TMP/$PROJECT/doc/fonts/$PROJECT/
 mv $TMP/$PROJECT/*.txt $TMP/$PROJECT/doc/fonts/$PROJECT/
 
 mkdir -p $TMP/$PROJECT/fonts/cmap/$PROJECT
-mv $TMP/$PROJECT/cmap/* $TMP/$PROJECT/fonts/cmap/$PROJECT
+mv $TMP/$PROJECT/cmap/* $TMP/$PROJECT/fonts/cmap/$PROJECT/
 
-mkdir -p $TMP/$PROJECT/source-new/fonts/$PROJECT
-mv $TMP/$PROJECT/source/* $TMP/$PROJECT/source-new/fonts/$PROJECT/
-rmdir $TMP/$PROJECT/source
-mv $TMP/$PROJECT/source{-new,}
+mkdir -p $TMP/$PROJECT/fonts/source/$PROJECT
+mv $TMP/$PROJECT/source/* $TMP/$PROJECT/fonts/source/$PROJECT/
+
+#mkdir -p $TMP/$PROJECT/source-new/fonts/$PROJECT
+#mv $TMP/$PROJECT/source/* $TMP/$PROJECT/source-new/fonts/$PROJECT/
+#rmdir $TMP/$PROJECT/source
+#mv $TMP/$PROJECT/source{-new,}
 
 mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/min
 mv $TMP/$PROJECT/tfm/ugb* $TMP/$PROJECT/fonts/tfm/$PROJECT/min/
@@ -36,13 +39,13 @@ mv $TMP/$PROJECT/tfm/urml* $TMP/$PROJECT/fonts/tfm/$PROJECT/min/
 mv $TMP/$PROJECT/tfm/*10* $TMP/$PROJECT/fonts/tfm/$PROJECT/min/
 
 mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/jis
-mv $TMP/$PROJECT/tfm/* $TMP/$PROJECT/fonts/tfm/$PROJECT/jis
+mv $TMP/$PROJECT/tfm/up* $TMP/$PROJECT/fonts/tfm/$PROJECT/jis
 
 mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/min
 mv $TMP/$PROJECT/vf/*10* $TMP/$PROJECT/fonts/vf/$PROJECT/min
 
 mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/jis
-mv $TMP/$PROJECT/vf/* $TMP/$PROJECT/fonts/vf/$PROJECT/jis
+mv $TMP/$PROJECT/vf/up* $TMP/$PROJECT/fonts/vf/$PROJECT/jis
 
 rmdir $TMP/$PROJECT/{cmap,tfm,vf}
 

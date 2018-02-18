@@ -45,11 +45,12 @@ JIS -> Unicode conversion is ambiguous and depends on tables.
 
 #### ChangeLog
 
-uptex-fonts-201801xx
+uptex-fonts-20180211
   * cmap/UTF8-UTF16:
     Updated (Version: 1.004).
   * cmap/cid_mapping.md,UniJISup-UTF16-{H,V},UniJIS2004up-UTF16-{H,V}:
     New CMap files and document on the new cid mapping.
+  * Add U+00B7 to char_type 3.
   * source/Makefile,makejvf-upjis.cnf,makejvf-upjpn.cnf:
     Added characters of Supplementary Ideographic Plane to upjis*.vf
     Added CJK Unified Ideographs Extension F to upjpn*.vf & upcns*.vf

@@ -12,12 +12,12 @@ Ref. [Unicode Vertical Text Layout](http://www.unicode.org/reports/tr50/)
 Brackets
 --------
 
-### Brackets in "Table 2. The Brackets Set"
-
 |Unicode | name                                     |  |width|gc|vo|JIS X 0208|JIS X 0213|UniJIS-*-H| -V | upjis*.pl |
 |--------|--------------------------------------------|--|:-:|:-:|:-:|--------|----------|:-----:|:-----:|:-----:|
 | U+00AB | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  | « |N|Pi|R | NA     | 1-09-08  | 109   | (109) | NA    |
 | U+00BB | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK | » |N|Pf|R | NA     | 1-09-18  | 123   | (123) | NA    |
+| U+2018 | LEFT SINGLE QUOTATION MARK                 | ‘ |A|Pi|R | 01-38 | 1-01-38  | 98    | (98)  | type1 |
+| U+2019 | RIGHT SINGLE QUOTATION MARK                | ’ |A|Pf|R | 01-39 | 1-01-39  | 96    | (96)  | type2 |
 | U+201C | LEFT DOUBLE QUOTATION MARK                 | “ |A|Pi|R | 01-40 | 1-01-40  | 108   | (108) | type1 |
 | U+201D | RIGHT DOUBLE QUOTATION MARK                | ” |A|Pf|R | 01-41 | 1-01-41  | 122   | (122) | type2 |
 | U+201E | DOUBLE LOW-9 QUOTATION MARK                | „ |N|Ps|R | NA     | NA       | 121   | (121) | NA    |
@@ -26,6 +26,8 @@ Brackets
 | U+203A | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK | › |N|Pf|R | NA     | NA       | 111   | (111) | NA    |
 | U+2045 | LEFT SQUARE BRACKET WITH QUILL             | ⁅ |N|Ps|R | NA     | NA       | NA    | NA    | NA    |
 | U+2046 | RIGHT SQUARE BRACKET WITH QUILL            | ⁆ |N|Pe|R | NA     | NA       | NA    | NA    | NA    |
+| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  |W|Ps|Tr| NA    | NA       | 682   | (682) | NA    |
+| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  |W|Pe|Tr| NA    | NA       | 683   | (682) | NA    |
 | U+3008 | LEFT ANGLE BRACKET                         | 〈 |W|Ps|Tr| 01-50 | 1-01-50  | 682   | 7907  | type1 |
 | U+3009 | RIGHT ANGLE BRACKET                        | 〉 |W|Pe|Tr| 01-51 | 1-01-51  | 683   | 7908  | type2 |
 | U+300A | LEFT DOUBLE ANGLE BRACKET                  | 《 |W|Ps|Tr| 01-52 | 1-01-52  | 684   | 7909  | type1 |
@@ -44,6 +46,9 @@ Brackets
 | U+3019 | RIGHT WHITE TORTOISE SHELL BRACKET         | 〙 |W|Pe|Tr| NA    | 1-02-57  | 12130 | 12140 | type2 |
 | U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
 | U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 |W|Ps|Tr| NA    | 1-13-64  | 7608  | 7956  | type1 |
+| U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 |W|Pe|Tr| NA    | NA       | 12170 |(12170)| NA    |
+| U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 |W|Pe|Tr| NA    | 1-13-65  | 7609  | 7957  | type2 |
 | U+FE59 | SMALL LEFT PARENTHESIS                     | ﹙ |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
 | U+FE5A | SMALL RIGHT PARENTHESIS                    | ﹚ |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
 | U+FE5B | SMALL LEFT CURLY BRACKET                   | ﹛ |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
@@ -67,22 +72,7 @@ Brackets
 * "gc"は"General Category Value"。Ps: Open_Punctuation, Pe: Close_Punctuation, Pi: Initial_Punctuation, Pf: Final_Punctuation
 * "vo"は"Vertical Orientation Property"。R: Rotated 90 degrees clockwise compared to the code charts, Tr: Transformed typographically, with fallback to Rotated. "vo"がTrのものは"Table 4. Glyph Changes for Vertical Orientation"において縦組み字形が示されている。
 * JIS X 0208, JIS X 0213の"*"は、広く実装されている「全角形」への対応関係であること示す。
-* U+201C, U+201Dの組は UniJIS-UCS2-{H,V}と UniJIS-UTF16-{H,V} に違いがあり、UCS2は和文用に、UTF16は欧文用に割り当てられている。
+* (U+201C, U+201D), (U+2018, U+2019)の各組は UniJIS-UCS2-{H,V}と UniJIS-UTF16-{H,V} に違いがあり、UCS2は和文用に、UTF16は欧文用に割り当てられている。
 * U+301A, U+301Bの組は Unicodeの "CJK Symbols and Punctuation" ブロック内にある。CJK用を意図しているようだがどの規格に基づいているのか不明。
-
-
-### Brackets not in "Table 2. The Brackets Set"
-
-|Unicode | name                                     |  |width|gc|vo|JIS X 0208|JIS X 0213|UniJIS-*-H| -V | upjis*.pl |
-|--------|--------------------------------------------|--|:-:|:-:|:-:|--------|----------|:-----:|:-----:|:-----:|
-| U+2018 | LEFT SINGLE QUOTATION MARK                 | ‘ |A|Pi|R | 01-38 | 1-01-38  | 98    | (98)  | type1 |
-| U+2019 | RIGHT SINGLE QUOTATION MARK                | ’ |A|Pf|R | 01-39 | 1-01-39  | 96    | (96)  | type2 |
-| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  |W|Ps|Tr| NA    | NA       | 682   | (682) | NA    |
-| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  |W|Pe|Tr| NA    | NA       | 683   | (682) | NA    |
-| U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 |W|Ps|Tr| NA    | 1-13-64  | 7608  | 7956  | type1 |
-| U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 |W|Pe|Tr| NA    | NA       | 12170 |(12170)| NA    |
-| U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 |W|Pe|Tr| NA    | 1-13-65  | 7609  | 7957  | type2 |
-
-* U+2018, U+2019の組は UniJIS-UCS2-{H,V} と UniJIS-UTF16-{H,V} に違いがあり、UCS2は和文用に、UTF16は欧文用に割り当てられている。
 * U+2329, U+232Aの組は U+3008, U+3009の組とよく似ている。UniJIS-UTF16-{H,V} のCIDでは違いがない。違いが分からない。
 

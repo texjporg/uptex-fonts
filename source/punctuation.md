@@ -1,23 +1,27 @@
 Punctuation marks
 ===================
 
-Ref. [Unicode Vertical Text Layout](http://www.unicode.org/reports/tr50/)
-[Vertical Orientation](http://www.unicode.org/Public/10.0.0/ucd/VerticalOrientation.txt)
-[East Asian Width](http://www.unicode.org/reports/tr11/)
-[EastAsianWidth.txt](http://www.unicode.org/Public/10.0.0/ucd/EastAsianWidth.txt)
-[General Category Value](http://www.unicode.org/reports/tr44/#General_Category_Values)
-[Scripts.txt](http://www.unicode.org/Public/10.0.0/ucd/Scripts.txt)
+References:
+
+1. [Unicode Vertical Text Layout](http://www.unicode.org/reports/tr50/)
+2. [Vertical Orientation](http://www.unicode.org/Public/10.0.0/ucd/VerticalOrientation.txt)
+3. [East Asian Width](http://www.unicode.org/reports/tr11/)
+4. [EastAsianWidth.txt](http://www.unicode.org/Public/10.0.0/ucd/EastAsianWidth.txt)
+5. [General Category Value](http://www.unicode.org/reports/tr44/#General_Category_Values)
+6. [Scripts.txt](http://www.unicode.org/Public/10.0.0/ucd/Scripts.txt)
 
 
 Brackets
 --------
 
 |Unicode | name                                     |  |width|gc|vo|JIS X 0208|JIS X 0213|UniJIS-*-H| -V | upjis*.pl |
-|--------|--------------------------------------------|--|:-:|:-:|:-:|--------|----------|:-----:|:-----:|:-----:|
+|--------|-------------------------------------------|:-:|:-:|:-:|:-:|--------|----------|:-----:|:-----:|:-----:|
 | U+00AB | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  | « |N|Pi|R | NA     | 1-09-08  | 109   | (109) | NA    |
 | U+00BB | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK | » |N|Pf|R | NA     | 1-09-18  | 123   | (123) | NA    |
 | U+2018 | LEFT SINGLE QUOTATION MARK                 | ‘ |A|Pi|R | 01-38 | 1-01-38  | 98    | (98)  | type1 |
 | U+2019 | RIGHT SINGLE QUOTATION MARK                | ’ |A|Pf|R | 01-39 | 1-01-39  | 96    | (96)  | type2 |
+| U+201A | SINGLE LOW-9 QUOTATION MARK                | ‚ |N|Ps|R | NA     | NA       | 120   | (120) | NA    |
+| U+201B | SINGLE HIGH-REVERSED-9 QUOTATION MARK      | ‛ |N|Pi|R | NA     | NA       | NA    | NA    | NA    |
 | U+201C | LEFT DOUBLE QUOTATION MARK                 | “ |A|Pi|R | 01-40 | 1-01-40  | 108   | (108) | type1 |
 | U+201D | RIGHT DOUBLE QUOTATION MARK                | ” |A|Pf|R | 01-41 | 1-01-41  | 122   | (122) | type2 |
 | U+201E | DOUBLE LOW-9 QUOTATION MARK                | „ |N|Ps|R | NA     | NA       | 121   | (121) | NA    |
@@ -75,4 +79,4 @@ Brackets
 * (U+201C, U+201D), (U+2018, U+2019)の各組は UniJIS-UCS2-{H,V}と UniJIS-UTF16-{H,V} に違いがあり、UCS2は和文用に、UTF16は欧文用に割り当てられている。
 * U+301A, U+301Bの組は Unicodeの "CJK Symbols and Punctuation" ブロック内にある。CJK用を意図しているようだがどの規格に基づいているのか不明。
 * U+2329, U+232Aの組は U+3008, U+3009の組とよく似ている。UniJIS-UTF16-{H,V} のCIDでは違いがない。違いが分からない。
-
+* U+FE17, U+FE18, U+FE35..U+FE44, U+FE47, U+FE48に"PRESENTATION FORM FOR VERTICAL LEFT/RIGHT ... BRACKET"がある。それらを除くと、この表には `grep -E "[FWAH]\s+# P[ifse]" EastAsianWidth.txt` で検索される文字(Fullwidth, Wide, Ambiguos, Halfwidthの括弧類)が全て含まれている。 `grep -E "N.*\s+# P[ifse]" EastAsianWidth.txt` で検索される文字(Newtral, Narrowの括弧類)はこの表以外にまだ大量に存在する。

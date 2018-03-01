@@ -142,3 +142,58 @@ Brackets
 * U+FE59..U+FE5Eは CNS 互換で導入されたものらしい。
 該当のグリフは、5080.Adobe-CNS1-6.pdfとUnicodeのUFE50.pdfでは仮想ボディの左右端に寄っているが 5079.Adobe-GB1-5.pdfでは仮想ボディの中央に位置している。
 
+|Unicode | name                                     |  |width|gc|vo| B5    | ETen-B5  |UniCNS-*-H| -V | uptch*.pl |
+|--------|-------------------------------------------|:-:|:-:|:-:|:-:|-----|----------|:-----:|:-----:|:-----:|
+| U+00AB | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  | « |N|Pi|R | NA     | NA       | NA    | NA    | NA    |
+| U+00BB | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK | » |N|Pf|R | NA     | NA       | NA    | NA    | NA    |
+| U+2018 | LEFT SINGLE QUOTATION MARK                 | ‘ |A|Pi|R | a1a5  | a1a5     | 166   | (166) | type1 |
+| U+2019 | RIGHT SINGLE QUOTATION MARK                | ’ |A|Pf|R | a1a6  | a1a6     | 167   | (167) | type2 |
+| U+201A | SINGLE LOW-9 QUOTATION MARK                | ‚ |N|Ps|R | NA     | NA       | NA    | NA    | NA    |
+| U+201B | SINGLE HIGH-REVERSED-9 QUOTATION MARK      | ‛ |N|Pi|R | NA     | NA       | NA    | NA    | NA    |
+| U+201C | LEFT DOUBLE QUOTATION MARK                 | “ |A|Pi|R | a1a7  | a1a7     | 168   | (168) | type1 |
+| U+201D | RIGHT DOUBLE QUOTATION MARK                | ” |A|Pf|R | a1a8  | a1a8     | 169   | (169) | type2 |
+| U+201E | DOUBLE LOW-9 QUOTATION MARK                | „ |N|Ps|R | NA     | NA       | NA    | NA    | NA    |
+| U+201F | DOUBLE HIGH-REVERSED-9 QUOTATION MARK      | ‟ |N|Pi|R | NA     | NA       | NA    | NA    | NA    |
+| U+2039 | SINGLE LEFT-POINTING ANGLE QUOTATION MARK  | ‹ |N|Pi|R | NA     | NA       | NA    | NA    | NA    |
+| U+203A | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK | › |N|Pf|R | NA     | NA       | NA    | NA    | NA    |
+| U+2045 | LEFT SQUARE BRACKET WITH QUILL             | ⁅ |N|Ps|R | NA     | NA       | NA    | NA    | NA    |
+| U+2046 | RIGHT SQUARE BRACKET WITH QUILL            | ⁆ |N|Pe|R | NA     | NA       | NA    | NA    | NA    |
+| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  |W|Ps|Tr| NA    | NA       | 148   | (148) | NA    |
+| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  |W|Pe|Tr| NA    | NA       | 149   | (148) | NA    |
+| U+3008 | LEFT ANGLE BRACKET                         | 〈 |W|Ps|Tr| a171  | a171     | 148   | 150   | type1 |
+| U+3009 | RIGHT ANGLE BRACKET                        | 〉 |W|Pe|Tr| a172  | a172     | 149   | 151   | type2 |
+| U+300A | LEFT DOUBLE ANGLE BRACKET                  | 《 |W|Ps|Tr| a16d  | a16d     | 144   | 146   | type1 |
+| U+300B | RIGHT DOUBLE ANGLE BRACKET                 | 》 |W|Pe|Tr| a16e  | a16e     | 145   | 147   | type2 |
+| U+300C | LEFT CORNER BRACKET                        | 「 |W|Ps|Tr| a175  | a175     | 152   | 154   | type1 |
+| U+300D | RIGHT CORNER BRACKET                       | 」 |W|Pe|Tr| a176  | a176     | 153   | 155   | type2 |
+| U+300E | LEFT WHITE CORNER BRACKET                  | 『 |W|Ps|Tr| a179  | a179     | 156   | 158   | type1 |
+| U+300F | RIGHT WHITE CORNER BRACKET                 | 』 |W|Pe|Tr| a17a  | a17a     | 157   | 159   | type2 |
+| U+3010 | LEFT BLACK LENTICULAR BRACKET              | 【 |W|Ps|Tr| a169  | a169     | 140   | 142   | type1 |
+| U+3011 | RIGHT BLACK LENTICULAR BRACKET             | 】 |W|Pe|Tr| a16a  | a16a     | 141   | 143   | type2 |
+| U+3014 | LEFT TORTOISE SHELL BRACKET                | 〔 |W|Ps|Tr| a165  | a165     | 136   | 138   | type1 |
+| U+3015 | RIGHT TORTOISE SHELL BRACKET               | 〕 |W|Pe|Tr| a166  | a166     | 137   | 139   | type2 |
+| U+3016 | LEFT WHITE LENTICULAR BRACKET              | 〖 |W|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
+| U+3017 | RIGHT WHITE LENTICULAR BRACKET             | 〗 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
+| U+3018 | LEFT WHITE TORTOISE SHELL BRACKET          | 〘 |W|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
+| U+3019 | RIGHT WHITE TORTOISE SHELL BRACKET         | 〙 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
+| U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 |W|Ps|Tr| a1a9  | a1a9     | 170   |(170)  | type1 |
+| U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 |W|Pe|Tr| a1aa  | a1aa     | 171   |(171)  | NA    |
+| U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
+| U+FE59 | SMALL LEFT PARENTHESIS                     | ﹙ |W|Ps|Tr| a17d    | a17d     | 160    |(160)  | NA    |
+| U+FE5A | SMALL RIGHT PARENTHESIS                    | ﹚ |W|Pe|Tr| a17e    | a17e     | 161    |(161)  | NA    |
+| U+FE5B | SMALL LEFT CURLY BRACKET                   | ﹛ |W|Ps|Tr| a1a1    | a1a1     | 162    |(162)  | NA    |
+| U+FE5C | SMALL RIGHT CURLY BRACKET                  | ﹜ |W|Pe|Tr| a1a2    | a1a2     | 163    |(163)  | NA    |
+| U+FE5D | SMALL LEFT TORTOISE SHELL BRACKET          | ﹝ |W|Ps|Tr| a1a3    | a1a3     | 164    |(164)  | NA    |
+| U+FE5E | SMALL RIGHT TORTOISE SHELL BRACKET         | ﹞ |W|Pe|Tr| a1a4    | a1a4     | 165    |(165)  | NA    |
+| U+FF08 | FULLWIDTH LEFT PARENTHESIS                 | （ |F|Ps|Tr| a15d  | a15d     | 128   | 130   | type1 |
+| U+FF09 | FULLWIDTH RIGHT PARENTHESIS                | ） |F|Pe|Tr| a15e  | a15e     | 129   | 131   | type2 |
+| U+FF3B | FULLWIDTH LEFT SQUARE BRACKET              | ［ |F|Ps|Tr| NA    | c6e4     | 13758 |(13758)| type1 |
+| U+FF3D | FULLWIDTH RIGHT SQUARE BRACKET             | ］ |F|Pe|Tr| NA    | c6e5     | 13759 |(13759)| type2 |
+| U+FF5B | FULLWIDTH LEFT CURLY BRACKET               | ｛ |F|Ps|Tr| a161  | a161     | 132   | 134   | type1 |
+| U+FF5D | FULLWIDTH RIGHT CURLY BRACKET              | ｝ |F|Pe|Tr| a162  | a162     | 133   | 135   | type2 |
+| U+FF5F | FULLWIDTH LEFT WHITE PARENTHESIS           | ｟ |F|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
+| U+FF60 | FULLWIDTH RIGHT WHITE PARENTHESIS          | ｠ |F|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
+| U+FF62 | HALFWIDTH LEFT CORNER BRACKET              | ｢ |H|Ps|R |(半角カナ)|        | NA    | NA    | NA    |
+| U+FF63 | HALFWIDTH RIGHT CORNER BRACKET             | ｣ |H|Pe|R |(半角カナ)|        | NA    | NA    | NA    |

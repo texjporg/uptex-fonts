@@ -215,8 +215,8 @@ Brackets
 | U+203A | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK | › |N|Pf|R | NA     | NA       | NA    | NA    | NA    |
 | U+2045 | LEFT SQUARE BRACKET WITH QUILL             | ⁅ |N|Ps|R | NA     | NA       | NA    | NA    | NA    |
 | U+2046 | RIGHT SQUARE BRACKET WITH QUILL            | ⁆ |N|Pe|R | NA     | NA       | NA    | NA    | NA    |
-| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
-| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  |W|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
+| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
 | U+3008 | LEFT ANGLE BRACKET                         | 〈 |W|Ps|Tr| a1b4  | a1b4     | 120   | 8065  | type1 |
 | U+3009 | RIGHT ANGLE BRACKET                        | 〉 |W|Pe|Tr| a1b5  | a1b5     | 121   | 8066  | type2 |
 | U+300A | LEFT DOUBLE ANGLE BRACKET                  | 《 |W|Ps|Tr| a1b6  | a1b6     | 122   | 8067  | type1 |
@@ -233,11 +233,11 @@ Brackets
 | U+3017 | RIGHT WHITE LENTICULAR BRACKET             | 〗 |W|Pe|Tr| NA    | a15e     | 8220  |(8220) | type2 |
 | U+3018 | LEFT WHITE TORTOISE SHELL BRACKET          | 〘 |W|Ps|Tr| NA    | a15f     | 8221  |(8221) | type1 |
 | U+3019 | RIGHT WHITE TORTOISE SHELL BRACKET         | 〙 |W|Pe|Tr| NA    | a160     | 8222  |(8222) | type2 |
-| U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
-| U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
-| U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 |W|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
+| U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 |W|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
+| U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
+| U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
 | U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 |W|Pe|Tr| NA    | ada9     | 9322  |(9322) | NA    |
-| U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 |W|Pe|Tr| NA    | adaa     | 9323  |(9323) | type2 |
+| U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 |W|Pe|Tr| NA    | adaa     | 9323  |(9323) | NA    |
 | U+FE59 | SMALL LEFT PARENTHESIS                     | ﹙ |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
 | U+FE5A | SMALL RIGHT PARENTHESIS                    | ﹚ |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
 | U+FE5B | SMALL LEFT CURLY BRACKET                   | ﹛ |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |

@@ -28,7 +28,7 @@ tfm:
 	done
 	for hv in h v ; do \
 	for fnt in upkorrm upkorgt ; do \
-		$(PLTOTF) upjisr-$$hv.pl $$fnt-$$hv.tfm ; \
+		$(PLTOTF) upkorr-$$hv.pl $$fnt-$$hv.tfm ; \
 	done ; \
 	for fnt in upschrm upschgt ; do \
 		$(PLTOTF) upschr-$$hv.pl $$fnt-$$hv.tfm ; \

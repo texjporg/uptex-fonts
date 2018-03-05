@@ -72,7 +72,7 @@ Brackets
 
 * UniJIS-*-{H,V} は、UniJIS-UTF16-{H,V} を示す。UniJIS-UCS-{H,V}では一部異なっている。
 * UniJIS-*-V の "()"は、縦組みの設定が無くHの字形がフォールバックされることを示す。
-* "width"は"East Asian Width"。N: Newtral, A: Ambiguos, W: Wide, Na: Narrow, F: Fullwidth, H: Halfwidth
+* "width"は"East Asian Width"。N: Neutral (= Not East Asian), A: Ambiguos, W: Wide, Na: Narrow, F: Fullwidth, H: Halfwidth
 * "gc"は"General Category Value"。Ps: Open_Punctuation, Pe: Close_Punctuation, Pi: Initial_Punctuation, Pf: Final_Punctuation
 * "vo"は"Vertical Orientation Property"。R: Rotated 90 degrees clockwise compared to the code charts, Tr: Transformed typographically, with fallback to Rotated. "vo"がTrのものは"Table 4. Glyph Changes for Vertical Orientation"において縦組み字形が示されている。
 * JIS X 0208, JIS X 0213の"*"は、広く実装されている「全角形」への対応関係であること示す。
@@ -136,8 +136,8 @@ Brackets
 | U+FF5D | FULLWIDTH RIGHT CURLY BRACKET              | ｝ |F|Pe|Tr| a3fd  | a3fd     | 354   | 597   | type2 |
 | U+FF5F | FULLWIDTH LEFT WHITE PARENTHESIS           | ｟ |F|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
 | U+FF60 | FULLWIDTH RIGHT WHITE PARENTHESIS          | ｠ |F|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
-| U+FF62 | HALFWIDTH LEFT CORNER BRACKET              | ｢ |H|Ps|R |(半角カナ)|        | NA    | NA    | NA    |
-| U+FF63 | HALFWIDTH RIGHT CORNER BRACKET             | ｣ |H|Pe|R |(半角カナ)|        | NA    | NA    | NA    |
+| U+FF62 | HALFWIDTH LEFT CORNER BRACKET              | ｢ |H|Ps|R | NA    | NA       | NA    | NA    | NA    |
+| U+FF63 | HALFWIDTH RIGHT CORNER BRACKET             | ｣ |H|Pe|R | NA    | NA       | NA    | NA    | NA    |
 
 * U+FE59..U+FE5Eは CNS 互換で導入されたものらしい。
 該当のグリフは、5080.Adobe-CNS1-6.pdfとUnicodeのUFE50.pdfでは仮想ボディの左右端に寄っているが 5079.Adobe-GB1-5.pdfでは仮想ボディの中央に位置している。
@@ -195,5 +195,75 @@ Brackets
 | U+FF5D | FULLWIDTH RIGHT CURLY BRACKET              | ｝ |F|Pe|Tr| a162  | a162     | 133   | 135   | type2 |
 | U+FF5F | FULLWIDTH LEFT WHITE PARENTHESIS           | ｟ |F|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
 | U+FF60 | FULLWIDTH RIGHT WHITE PARENTHESIS          | ｠ |F|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
-| U+FF62 | HALFWIDTH LEFT CORNER BRACKET              | ｢ |H|Ps|R |(半角カナ)|        | NA    | NA    | NA    |
-| U+FF63 | HALFWIDTH RIGHT CORNER BRACKET             | ｣ |H|Pe|R |(半角カナ)|        | NA    | NA    | NA    |
+| U+FF62 | HALFWIDTH LEFT CORNER BRACKET              | ｢ |H|Ps|R | NA    | NA       | NA    | NA    | NA    |
+| U+FF63 | HALFWIDTH RIGHT CORNER BRACKET             | ｣ |H|Pe|R | NA    | NA       | NA    | NA    | NA    |
+
+
+|Unicode | name                                     |  |width|gc|vo| KSC-EUC | KSCpc-EUC |UniKS-*-H| -V | upkor*.pl |
+|--------|-------------------------------------------|:-:|:-:|:-:|:-:|-----|----------|:-----:|:-----:|:-----:|
+| U+00AB | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  | « |N|Pi|R | a1ec   | a1ec     | 176   | (176) | NA    |
+| U+00BB | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK | » |N|Pf|R | a1ed   | a1ed     | 177   | (177) | NA    |
+| U+2018 | LEFT SINGLE QUOTATION MARK                 | ‘ |A|Pi|R | a1ae  | a1ae     | 114   | (114) | type1 |
+| U+2019 | RIGHT SINGLE QUOTATION MARK                | ’ |A|Pf|R | a1af  | a1af     | 115   | (115) | type2 |
+| U+201A | SINGLE LOW-9 QUOTATION MARK                | ‚ |N|Ps|R | NA     | NA       | NA    | NA    | NA    |
+| U+201B | SINGLE HIGH-REVERSED-9 QUOTATION MARK      | ‛ |N|Pi|R | NA     | a170     | 8238  |(8238) | NA    |
+| U+201C | LEFT DOUBLE QUOTATION MARK                 | “ |A|Pi|R | a1b0  | a1b0     | 116   | (116) | type1 |
+| U+201D | RIGHT DOUBLE QUOTATION MARK                | ” |A|Pf|R | a1b1  | a1b1     | 117   | (117) | type2 |
+| U+201E | DOUBLE LOW-9 QUOTATION MARK                | „ |N|Ps|R | NA     | NA       | NA    | NA    | NA    |
+| U+201F | DOUBLE HIGH-REVERSED-9 QUOTATION MARK      | ‟ |N|Pi|R | NA     | a16f     | 8237  |(8237) | NA    |
+| U+2039 | SINGLE LEFT-POINTING ANGLE QUOTATION MARK  | ‹ |N|Pi|R | NA     | NA       | NA    | NA    | NA    |
+| U+203A | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK | › |N|Pf|R | NA     | NA       | NA    | NA    | NA    |
+| U+2045 | LEFT SQUARE BRACKET WITH QUILL             | ⁅ |N|Ps|R | NA     | NA       | NA    | NA    | NA    |
+| U+2046 | RIGHT SQUARE BRACKET WITH QUILL            | ⁆ |N|Pe|R | NA     | NA       | NA    | NA    | NA    |
+| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+3008 | LEFT ANGLE BRACKET                         | 〈 |W|Ps|Tr| a1b4  | a1b4     | 120   | 8065  | type1 |
+| U+3009 | RIGHT ANGLE BRACKET                        | 〉 |W|Pe|Tr| a1b5  | a1b5     | 121   | 8066  | type2 |
+| U+300A | LEFT DOUBLE ANGLE BRACKET                  | 《 |W|Ps|Tr| a1b6  | a1b6     | 122   | 8067  | type1 |
+| U+300B | RIGHT DOUBLE ANGLE BRACKET                 | 》 |W|Pe|Tr| a1b7  | a1b7     | 123   | 8068  | type2 |
+| U+300C | LEFT CORNER BRACKET                        | 「 |W|Ps|Tr| a1b8  | a1b8     | 124   | 8069  | type1 |
+| U+300D | RIGHT CORNER BRACKET                       | 」 |W|Pe|Tr| a1b9  | a1b9     | 125   | 8070  | type2 |
+| U+300E | LEFT WHITE CORNER BRACKET                  | 『 |W|Ps|Tr| a1ba  | a1ba     | 126   | 8071  | type1 |
+| U+300F | RIGHT WHITE CORNER BRACKET                 | 』 |W|Pe|Tr| a1bb  | a1bb     | 127   | 8072  | type2 |
+| U+3010 | LEFT BLACK LENTICULAR BRACKET              | 【 |W|Ps|Tr| a1bc  | a1bc     | 128   | 8073  | type1 |
+| U+3011 | RIGHT BLACK LENTICULAR BRACKET             | 】 |W|Pe|Tr| a1bd  | a1bd     | 129   | 8074  | type2 |
+| U+3014 | LEFT TORTOISE SHELL BRACKET                | 〔 |W|Ps|Tr| a1b2  | a1b2     | 118   | 8063  | type1 |
+| U+3015 | RIGHT TORTOISE SHELL BRACKET               | 〕 |W|Pe|Tr| a1b3  | a1b3     | 119   | 8064  | type2 |
+| U+3016 | LEFT WHITE LENTICULAR BRACKET              | 〖 |W|Ps|Tr| NA    | a15d     | 8219  |(8219) | type1 |
+| U+3017 | RIGHT WHITE LENTICULAR BRACKET             | 〗 |W|Pe|Tr| NA    | a15e     | 8220  |(8220) | type2 |
+| U+3018 | LEFT WHITE TORTOISE SHELL BRACKET          | 〘 |W|Ps|Tr| NA    | a15f     | 8221  |(8221) | type1 |
+| U+3019 | RIGHT WHITE TORTOISE SHELL BRACKET         | 〙 |W|Pe|Tr| NA    | a160     | 8222  |(8222) | type2 |
+| U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 |W|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
+| U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 |W|Pe|Tr| NA    | ada9     | 9322  |(9322) | NA    |
+| U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 |W|Pe|Tr| NA    | adaa     | 9323  |(9323) | type2 |
+| U+FE59 | SMALL LEFT PARENTHESIS                     | ﹙ |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+FE5A | SMALL RIGHT PARENTHESIS                    | ﹚ |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+FE5B | SMALL LEFT CURLY BRACKET                   | ﹛ |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+FE5C | SMALL RIGHT CURLY BRACKET                  | ﹜ |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+FE5D | SMALL LEFT TORTOISE SHELL BRACKET          | ﹝ |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+FE5E | SMALL RIGHT TORTOISE SHELL BRACKET         | ﹞ |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+FF08 | FULLWIDTH LEFT PARENTHESIS                 | （ |F|Ps|Tr| a3a8  | a3a8     | 271   | 8077  | type1 |
+| U+FF09 | FULLWIDTH RIGHT PARENTHESIS                | ） |F|Pe|Tr| a3a9  | a3a9     | 272   | 8078  | type2 |
+| U+FF3B | FULLWIDTH LEFT SQUARE BRACKET              | ［ |F|Ps|Tr| a3db  | a3db     | 322   | 8087  | type1 |
+| U+FF3D | FULLWIDTH RIGHT SQUARE BRACKET             | ］ |F|Pe|Tr| a3dd  | a3dd     | 324   | 8088  | type2 |
+| U+FF5B | FULLWIDTH LEFT CURLY BRACKET               | ｛ |F|Ps|Tr| a3fb  | a3fb     | 354   | 8090  | type1 |
+| U+FF5D | FULLWIDTH RIGHT CURLY BRACKET              | ｝ |F|Pe|Tr| a3fd  | a3fd     | 356   | 8092  | type2 |
+| U+FF5F | FULLWIDTH LEFT WHITE PARENTHESIS           | ｟ |F|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
+| U+FF60 | FULLWIDTH RIGHT WHITE PARENTHESIS          | ｠ |F|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
+| U+FF62 | HALFWIDTH LEFT CORNER BRACKET              | ｢ |H|Ps|R | NA    | NA       | NA    | NA    | NA    |
+| U+FF63 | HALFWIDTH RIGHT CORNER BRACKET             | ｣ |H|Pe|R | NA    | NA       | NA    | NA    | NA    |
+
+* KSCms-UHCは、この表の範囲においてKSC-EUCと同じ。KSCpc-EUCは、"MacOS-KH character set"
+* 5093.Adobe-Korea1-2.pdf によると、CID176, CID177の組はU+226A, U+226Bの組(≪,≫, 数学記号)のように見える。
+括弧類として扱うのは不適切と思われる。
+* Adobe-Korea1 では CID9322が U+301E, CID9323が U+301F ということになっているが、CID9322がopen, CID9323がcloseのように見える。
+Unicodeの"General Category Value"との対応関係がしっくりこない。
+U+301E(CID9322)をtype1(Ps相当), U+301F(CID9323)をtype2(Pe相当)とすれば、Adobe-Korea1に対してはそれっぽく組めそうだが場当たり感が否めない。
+その上これらはUHCのようなメジャーなレガシーエンコーディングには含まれていない。
+* U+201Bをtype1(Pi)とすると、U+201B(CID8238), U+2019(CID115)の組でそれっぽく組めそう。
+しかし、通常これらは利用されずU+2018(CID114), U+2019(CID115)の組が使われると思われる。
+* U+201Fをtype1(Pi)とすると、U+201F(CID8237), U+201D(CID117)の組でそれっぽく組めそう。
+しかし、通常これらは利用されずU+201C(CID116), U+201D(CID117)の組が使われると思われる。
+

@@ -99,8 +99,8 @@ Brackets
 | U+203A | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK | › |N|Pf|R | NA     | NA       | NA    | NA    | NA    |
 | U+2045 | LEFT SQUARE BRACKET WITH QUILL             | ⁅ |N|Ps|R | NA     | NA       | NA    | NA    | NA    |
 | U+2046 | RIGHT SQUARE BRACKET WITH QUILL            | ⁆ |N|Pe|R | NA     | NA       | NA    | NA    | NA    |
-| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  |W|Ps|Tr| NA    | NA       | 115   | (115) | NA    |
-| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  |W|Pe|Tr| NA    | NA       | 116   | (116) | NA    |
+| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  |W|Ps|Tr| NA    | NA       | 115   | (115) | type1 |
+| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  |W|Pe|Tr| NA    | NA       | 116   | (116) | type2 |
 | U+3008 | LEFT ANGLE BRACKET                         | 〈 |W|Ps|Tr| a1b4  | a1b4     | 115   | 584   | type1 |
 | U+3009 | RIGHT ANGLE BRACKET                        | 〉 |W|Pe|Tr| a1b5  | a1b5     | 116   | 585   | type2 |
 | U+300A | LEFT DOUBLE ANGLE BRACKET                  | 《 |W|Ps|Tr| a1b6  | a1b6     | 117   | 586   | type1 |
@@ -117,10 +117,10 @@ Brackets
 | U+3017 | RIGHT WHITE LENTICULAR BRACKET             | 〗 |W|Pe|Tr| a1bd  | a1bd     | 124   | 593   | type2 |
 | U+3018 | LEFT WHITE TORTOISE SHELL BRACKET          | 〘 |W|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
 | U+3019 | RIGHT WHITE TORTOISE SHELL BRACKET         | 〙 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
-| U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
-| U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 |W|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
+| U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
 | U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 |W|Ps|Tr| NA    | a894     | 9990  |(9990) | type1 |
-| U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 |W|Pe|Tr| NA    | a895     | 9991  |(9991) | NA    |
+| U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 |W|Pe|Tr| NA    | a895     | 9991  |(9991) | type2 |
 | U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
 | U+FE59 | SMALL LEFT PARENTHESIS                     | ﹙ |W|Ps|Tr| NA    | a976     | 10041  |(10041)| NA    |
 | U+FE5A | SMALL RIGHT PARENTHESIS                    | ﹚ |W|Pe|Tr| NA    | a977     | 10042  |(10042)| NA    |
@@ -141,6 +141,7 @@ Brackets
 
 * U+FE59..U+FE5Eは CNS 互換で導入されたものらしい。
 該当のグリフは、5080.Adobe-CNS1-6.pdfとUnicodeのUFE50.pdfでは仮想ボディの左右端に寄っているが 5079.Adobe-GB1-5.pdfでは仮想ボディの中央に位置している。
+このためupsch*.plではtype1,type2に指定しないことにする。
 
 |Unicode | name                                     |  |width|gc|vo| B5    | ETen-B5  |UniCNS-*-H| -V | uptch*.pl |
 |--------|-------------------------------------------|:-:|:-:|:-:|:-:|-----|----------|:-----:|:-----:|:-----:|

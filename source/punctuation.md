@@ -159,8 +159,8 @@ Brackets
 | U+203A | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK | › |N|Pf|R | NA     | NA       | NA    | NA    | NA    |
 | U+2045 | LEFT SQUARE BRACKET WITH QUILL             | ⁅ |N|Ps|R | NA     | NA       | NA    | NA    | NA    |
 | U+2046 | RIGHT SQUARE BRACKET WITH QUILL            | ⁆ |N|Pe|R | NA     | NA       | NA    | NA    | NA    |
-| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  |W|Ps|Tr| NA    | NA       | 148   | (148) | NA    |
-| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  |W|Pe|Tr| NA    | NA       | 149   | (148) | NA    |
+| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  |W|Ps|Tr| NA    | NA       | 148   | (148) | type1 |
+| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  |W|Pe|Tr| NA    | NA       | 149   | (148) | type2 |
 | U+3008 | LEFT ANGLE BRACKET                         | 〈 |W|Ps|Tr| a171  | a171     | 148   | 150   | type1 |
 | U+3009 | RIGHT ANGLE BRACKET                        | 〉 |W|Pe|Tr| a172  | a172     | 149   | 151   | type2 |
 | U+300A | LEFT DOUBLE ANGLE BRACKET                  | 《 |W|Ps|Tr| a16d  | a16d     | 144   | 146   | type1 |
@@ -177,17 +177,17 @@ Brackets
 | U+3017 | RIGHT WHITE LENTICULAR BRACKET             | 〗 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
 | U+3018 | LEFT WHITE TORTOISE SHELL BRACKET          | 〘 |W|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
 | U+3019 | RIGHT WHITE TORTOISE SHELL BRACKET         | 〙 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
-| U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 |W|Ps|Tr| NA    | NA       | NA    | NA    | NA    |
-| U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 |W|Pe|Tr| NA    | NA       | NA    | NA    | NA    |
+| U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 |W|Ps|Tr| NA    | NA       | NA    | NA    | type1 |
+| U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
 | U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 |W|Ps|Tr| a1a9  | a1a9     | 170   |(170)  | type1 |
-| U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 |W|Pe|Tr| a1aa  | a1aa     | 171   |(171)  | NA    |
+| U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 |W|Pe|Tr| a1aa  | a1aa     | 171   |(171)  | type2 |
 | U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 |W|Pe|Tr| NA    | NA       | NA    | NA    | type2 |
-| U+FE59 | SMALL LEFT PARENTHESIS                     | ﹙ |W|Ps|Tr| a17d    | a17d     | 160    |(160)  | NA    |
-| U+FE5A | SMALL RIGHT PARENTHESIS                    | ﹚ |W|Pe|Tr| a17e    | a17e     | 161    |(161)  | NA    |
-| U+FE5B | SMALL LEFT CURLY BRACKET                   | ﹛ |W|Ps|Tr| a1a1    | a1a1     | 162    |(162)  | NA    |
-| U+FE5C | SMALL RIGHT CURLY BRACKET                  | ﹜ |W|Pe|Tr| a1a2    | a1a2     | 163    |(163)  | NA    |
-| U+FE5D | SMALL LEFT TORTOISE SHELL BRACKET          | ﹝ |W|Ps|Tr| a1a3    | a1a3     | 164    |(164)  | NA    |
-| U+FE5E | SMALL RIGHT TORTOISE SHELL BRACKET         | ﹞ |W|Pe|Tr| a1a4    | a1a4     | 165    |(165)  | NA    |
+| U+FE59 | SMALL LEFT PARENTHESIS                     | ﹙ |W|Ps|Tr| a17d    | a17d     | 160    |(160)  | type1 |
+| U+FE5A | SMALL RIGHT PARENTHESIS                    | ﹚ |W|Pe|Tr| a17e    | a17e     | 161    |(161)  | type2 |
+| U+FE5B | SMALL LEFT CURLY BRACKET                   | ﹛ |W|Ps|Tr| a1a1    | a1a1     | 162    |(162)  | type1 |
+| U+FE5C | SMALL RIGHT CURLY BRACKET                  | ﹜ |W|Pe|Tr| a1a2    | a1a2     | 163    |(163)  | type2 |
+| U+FE5D | SMALL LEFT TORTOISE SHELL BRACKET          | ﹝ |W|Ps|Tr| a1a3    | a1a3     | 164    |(164)  | type1 |
+| U+FE5E | SMALL RIGHT TORTOISE SHELL BRACKET         | ﹞ |W|Pe|Tr| a1a4    | a1a4     | 165    |(165)  | type2 |
 | U+FF08 | FULLWIDTH LEFT PARENTHESIS                 | （ |F|Ps|Tr| a15d  | a15d     | 128   | 130   | type1 |
 | U+FF09 | FULLWIDTH RIGHT PARENTHESIS                | ） |F|Pe|Tr| a15e  | a15e     | 129   | 131   | type2 |
 | U+FF3B | FULLWIDTH LEFT SQUARE BRACKET              | ［ |F|Ps|Tr| NA    | c6e4     | 13758 |(13758)| type1 |

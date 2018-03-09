@@ -49,11 +49,15 @@
    ‘ “ （ 〔 ［ ｛ 〈 《 「 『
    【
    UFF5F U3018 U3016 U301D 
+   U2329 U301A 
+   UFE59 UFE5B UFE5D 
    )
 (CHARSINTYPE O 2
    ’ ” ） 〕 ］ ｝ 〉 》
    」 』 】
    UFF60 U3019 U3017 U301F 
+   U232A U301B U301E 
+   UFE5A UFE5C UFE5E 
    )
 (CHARSINTYPE O 3
    、 ， 。 ． ・ ： ；

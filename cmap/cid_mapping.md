@@ -8,6 +8,7 @@ CID mapping memo
 |左ダブル引用符        |“| 01-40 0x2148 | 1-01-40 0x2146 | U+201C | 672 | (672) |
 |右ダブル引用符        |”| 01-41 0x2149 | 1-01-41 0x2146 | U+201D | 673 | (673) |
 |始めダブルミニュート  |〝| ----- ------ | 1-13-64 0x2d60 | U+301D | --- | ---   |
+|                      |〞| ----- ------ | ------- ------ | U+301E | --- | ---   |
 |終わりダブルミニュート|〟| ----- ------ | 1-13-65 0x2d61 | U+301F | --- | ---   |
 |コロン                |：| 01-07 0x2127 | 1-01-07 0x2127 | U+FF1A | 639 | (639) |
 |セミコロン            |；| 01-08 0x2128 | 1-01-08 0x2128 | U+FF1B | 640 | (640) |
@@ -19,6 +20,7 @@ CID mapping memo
 |左ダブル引用符        |LEFT DOUBLE QUOTATION MARK          |“| U+201C |   672  |  8279   |
 |右ダブル引用符        |RIGHT DOUBLE QUOTATION MARK         |”| U+201D |   673  |  8280   |
 |始めダブルミニュート  |REVERSED DOUBLE PRIME QUOTATION MARK|〝| U+301D |  7608  |  7956   |
+|                      |DOUBLE PRIME QUOTATION MARK         |〞| U+301E |  ---   |  ---    |
 |終わりダブルミニュート|LOW DOUBLE PRIME QUOTATION MARK     |〟| U+301F |  7609  |  7957   |
 |コロン                |FULLWIDTH COLON                     |：| U+FF1A |   639  |  (639)  |
 |セミコロン            |FULLWIDTH SEMICOLON                 |；| U+FF1B |   640  |  (640)  |
@@ -30,6 +32,7 @@ CID mapping memo
 |左ダブル引用符        |LEFT DOUBLE QUOTATION MARK          |“| U+201C |   108  |  (108)  |
 |右ダブル引用符        |RIGHT DOUBLE QUOTATION MARK         |”| U+201D |   122  |  (122)  |
 |始めダブルミニュート  |REVERSED DOUBLE PRIME QUOTATION MARK|〝| U+301D |  7608  |  7956   |
+|                      |DOUBLE PRIME QUOTATION MARK         |〞| U+301E | 12170  | (12170) |
 |終わりダブルミニュート|LOW DOUBLE PRIME QUOTATION MARK     |〟| U+301F |  7609  |  7957   |
 |コロン                |FULLWIDTH COLON                     |：| U+FF1A |   639  |  (639)  |
 |セミコロン            |FULLWIDTH SEMICOLON                 |；| U+FF1B |   640  |  (640)  |
@@ -41,6 +44,7 @@ CID mapping memo
 |左ダブル引用符        |LEFT DOUBLE QUOTATION MARK          |“| U+201C |  [672] | [7956]  |
 |右ダブル引用符        |RIGHT DOUBLE QUOTATION MARK         |”| U+201D |  [673] | [7957]  |
 |始めダブルミニュート  |REVERSED DOUBLE PRIME QUOTATION MARK|〝| U+301D |  7608  |  7956   |
+|                      |DOUBLE PRIME QUOTATION MARK         |〞| U+301E | 12170  | [7957]  |
 |終わりダブルミニュート|LOW DOUBLE PRIME QUOTATION MARK     |〟| U+301F |  7609  |  7957   |
 |コロン                |FULLWIDTH COLON                     |：| U+FF1A |   639  | [12101] |
 |セミコロン            |FULLWIDTH SEMICOLON                 |；| U+FF1B |   640  | (640)   |

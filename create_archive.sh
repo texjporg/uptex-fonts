@@ -19,7 +19,7 @@ rm -f $TMP/$PROJECT/README.md.bak
 
 mkdir -p $TMP/$PROJECT/doc/fonts/$PROJECT
 mv $TMP/$PROJECT/LICENSE $TMP/$PROJECT/doc/fonts/$PROJECT/
-mv $TMP/$PROJECT/README.md $TMP/$PROJECT/doc/fonts/$PROJECT/
+mv $TMP/$PROJECT/*.md $TMP/$PROJECT/doc/fonts/$PROJECT/
 mv $TMP/$PROJECT/*.txt $TMP/$PROJECT/doc/fonts/$PROJECT/
 
 mkdir -p $TMP/$PROJECT/fonts/cmap/$PROJECT

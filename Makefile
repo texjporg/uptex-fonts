@@ -8,7 +8,7 @@ default:
 install:
 	mkdir -p ${TEXMF}/doc/fonts/uptex-fonts
 	cp ./LICENSE ${TEXMF}/doc/fonts/uptex-fonts/
-	cp ./README.md ${TEXMF}/doc/fonts/uptex-fonts/
+	cp ./*.md ${TEXMF}/doc/fonts/uptex-fonts/
 	cp ./*.txt ${TEXMF}/doc/fonts/uptex-fonts/
 	mkdir -p ${TEXMF}/fonts/cmap/uptex-fonts
 	cp ./cmap/* ${TEXMF}/fonts/cmap/uptex-fonts/

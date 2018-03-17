@@ -1,4 +1,4 @@
-vf & tfm font for upTeX/upLaTeX based on "jis font TFM & VF set"
+TFM & VF font for upTeX/upLaTeX based on "jis font TFM & VF set"
 ================================================================
 
 

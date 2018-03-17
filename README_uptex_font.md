@@ -94,7 +94,7 @@ JIS -> Unicode conversion is ambiguous and depends on tables.
 ChangeLog
 ---------
 
-## uptex-fonts-20180317
+### uptex-fonts-20180317
 * cmap/cid_mapping.md,UniJISup-UTF16-V,UniJIS2004up-UTF16-V:
   Add U+301E.
 * source/punctuation.md,Makefile,makepl.perl,upjisr-h{,-hk}.pl,upjisr-v.pl,
@@ -102,7 +102,7 @@ ChangeLog
   Refine punctuation marks and parentheses.
 * tfm/,vf/: Update.
 
-## uptex-fonts-20180211
+### uptex-fonts-20180211
 * cmap/UTF8-UTF16:
   Updated (Version: 1.004).
 * cmap/cid_mapping.md,UniJISup-UTF16-{H,V},UniJIS2004up-UTF16-{H,V}:
@@ -112,7 +112,7 @@ ChangeLog
   Added characters of Supplementary Ideographic Plane to upjis\*.vf
   Added CJK Unified Ideographs Extension F to upjpn\*.vf & upcns\*.vf
 
-## uptex-1.00 [2012/01/15] TTK
+### uptex-1.00 [2012/01/15] TTK
 * re-package for upTeX/upLaTeX Ver.1.00 distribution.
 * makepl.perl, upjisr-h{,-hk}.pl, upjisr-v.pl,
   upjis{r,g}-{h,v}.tfm, up{jpn,kor,sch,tch}{rm,gt}-{h,v}.tfm:
@@ -122,5 +122,5 @@ ChangeLog
 * Makefile:
   update.
 
-## v20110507a [2011/05/07] TTK
+### v20110507a [2011/05/07] TTK
 * re-package for upTeX/upLaTeX based on uptex-0.30 distribution.

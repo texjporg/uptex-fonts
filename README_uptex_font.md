@@ -80,8 +80,8 @@ Added or modified Setting from jis.tfm / jis.tfm から追加・変更した設�
 
 #### About EM DASH & HORIZONTAL BAR / ダッシュ(全角)について
 
-* U+2014: EM DASH
-* U+2015: HORIZONTAL BAR
+* Unicode U+2014: EM DASH
+* Unicode U+2015: HORIZONTAL BAR
 * JIS X 0208    01-29 ダッシュ(全角) (0x213D)
 * JIS X 0213  1-01-29 ダッシュ(全角)
 
@@ -93,6 +93,14 @@ JIS -> Unicode conversion is ambiguous and depends on tables.
 
 ChangeLog
 ---------
+
+## uptex-fonts-20180317
+* cmap/cid_mapping.md,UniJISup-UTF16-V,UniJIS2004up-UTF16-V:
+  Add U+301E.
+* source/punctuation.md,Makefile,makepl.perl,upjisr-h{,-hk}.pl,upjisr-v.pl,
+  up{sch,tch,kor}r-{h,v}.pl:
+  Refine punctuation marks and parentheses.
+* tfm/,vf/: Update.
 
 ## uptex-fonts-20180211
 * cmap/UTF8-UTF16:

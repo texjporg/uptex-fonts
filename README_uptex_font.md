@@ -1,4 +1,5 @@
-jis font for upTeX/upLaTeX
+vf & tfm font for upTeX/upLaTeX based on "jis font TFM & VF set"
+================================================================
 
 
 The files in this directory are
@@ -14,56 +15,64 @@ upTeX/upLaTeX向けに改変したものです。
 "README_ASCII_Corp.txt" の内容にしたがってご利用ください。
 
 
-Setting in addition to jis.tfm:
-jis.tfm などから追加した設定:
-Type1: U+FF5F U+3018 U+3016 U+301D 
-Type2: U+FF60 U+3019 U+3017 U+301F 
-Type3: U+00B7 
-Type5: JIS 0x213D -> U+2014 and U+2015
+Setting in addition to jis.tfm / jis.tfm などから追加した設定
+------------------------------------------------------------
 
-                  men-ku-ten
-                   面-区-点
-U+FF5F: JIS X 0213  1-02-54 始め二重バーレーン
-U+3018: JIS X 0213  1-02-56 始め二重亀甲括弧
-U+3016: JIS X 0213  1-02-58 始めすみ付き括弧(白)
-U+301D: JIS X 0213  1-13-64 始めダブルミニュート
-U+FF60: JIS X 0213  1-02-55 終わり二重バーレーン
-U+3019: JIS X 0213  1-02-57 終わり二重亀甲括弧
-U+3017: JIS X 0213  1-02-59 終わりすみ付き括弧(白)
-U+301F: JIS X 0213  1-13-65 終わりダブルミニュート
-U+00B7: JIS X 0213  1-09-14 中点（ラテン）
+### upjis, upjpn for Japanese / 日本語
 
-U+2014: EM DASH
-U+2015: HORIZONTAL BAR
-        JIS X 0208    01-29 ダッシュ(全角) (0x213D)
-        JIS X 0213  1-01-29 ダッシュ(全角)
+* Type1: U+FF5F U+3018 U+3016 U+301D
+* Type2: U+FF60 U+3019 U+3017 U+301F
+* Type3: U+00B7
+* Type5: JIS 0x213D -> U+2014 and U+2015
+
+Unicode | Name | JIS X 0213 面区点 | Name in JIS |
+:------:|------|:----------:|-------------|
+U+FF5F | | 1-02-54 | 始め二重バーレーン
+U+3018 | | 1-02-56 | 始め二重亀甲括弧
+U+3016 | | 1-02-58 | 始めすみ付き括弧(白)
+U+301D | | 1-13-64 | 始めダブルミニュート
+U+FF60 | | 1-02-55 | 終わり二重バーレーン
+U+3019 | | 1-02-57 | 終わり二重亀甲括弧
+U+3017 | | 1-02-59 | 終わりすみ付き括弧(白)
+U+301F | | 1-13-65 | 終わりダブルミニュート
+U+00B7 | | 1-09-14 | 中点（ラテン）
+
+
+#### About EM DASH & HORIZONTAL BAR / ダッシュ(全角)について
+
+* U+2014: EM DASH
+* U+2015: HORIZONTAL BAR
+* JIS X 0208    01-29 ダッシュ(全角) (0x213D)
+* JIS X 0213  1-01-29 ダッシュ(全角)
 
 JIS -> Unicode conversion is ambiguous and depends on tables.
-0x213D -> U+2014 : JIS, Macintosh, nkf, JavaJRE1.4.0 or later
-0x213D -> U+2015 : Windows, gd, JavaJRE1.3.1, upTeX
+
+* 0x213D -> U+2014 : JIS, Macintosh, nkf, JavaJRE1.4.0 or later
+* 0x213D -> U+2015 : Windows, gd, JavaJRE1.3.1, upTeX
 
 
-#### ChangeLog
+ChangeLog
+---------
 
-uptex-fonts-20180211
-  * cmap/UTF8-UTF16:
-    Updated (Version: 1.004).
-  * cmap/cid_mapping.md,UniJISup-UTF16-{H,V},UniJIS2004up-UTF16-{H,V}:
-    New CMap files and document on the new cid mapping.
-  * Add U+00B7 to char_type 3.
-  * source/Makefile,makejvf-upjis.cnf,makejvf-upjpn.cnf:
-    Added characters of Supplementary Ideographic Plane to upjis*.vf
-    Added CJK Unified Ideographs Extension F to upjpn*.vf & upcns*.vf
+## uptex-fonts-20180211
+* cmap/UTF8-UTF16:
+  Updated (Version: 1.004).
+* cmap/cid_mapping.md,UniJISup-UTF16-{H,V},UniJIS2004up-UTF16-{H,V}:
+  New CMap files and document on the new cid mapping.
+* Add U+00B7 to char_type 3.
+* source/Makefile,makejvf-upjis.cnf,makejvf-upjpn.cnf:
+  Added characters of Supplementary Ideographic Plane to upjis\*.vf
+  Added CJK Unified Ideographs Extension F to upjpn\*.vf & upcns\*.vf
 
-uptex-1.00 [2012/01/15] TTK
-  * re-package for upTeX/upLaTeX Ver.1.00 distribution.
-  * makepl.perl, upjisr-h{,-hk}.pl, upjisr-v.pl,
-    upjis{r,g}-{h,v}.tfm, up{jpn,kor,sch,tch}{rm,gt}-{h,v}.tfm:
-    add U+2014 as Type 5 in tfm files.
-  * upjpn{rm,gt}-{h,v}.vf:
-    add CJK Unified Ideographs Extension C,D.
-  * Makefile:
-    update.
+## uptex-1.00 [2012/01/15] TTK
+* re-package for upTeX/upLaTeX Ver.1.00 distribution.
+* makepl.perl, upjisr-h{,-hk}.pl, upjisr-v.pl,
+  upjis{r,g}-{h,v}.tfm, up{jpn,kor,sch,tch}{rm,gt}-{h,v}.tfm:
+  add U+2014 as Type 5 in tfm files.
+* upjpn{rm,gt}-{h,v}.vf:
+  add CJK Unified Ideographs Extension C,D.
+* Makefile:
+  update.
 
-v20110507a [2011/05/07] TTK
-  * re-package for upTeX/upLaTeX based on uptex-0.30 distribution.
+## v20110507a [2011/05/07] TTK
+* re-package for upTeX/upLaTeX based on uptex-0.30 distribution.

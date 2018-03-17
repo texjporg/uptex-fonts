@@ -15,27 +15,40 @@ upTeX/upLaTeX向けに改変したものです。
 "README_ASCII_Corp.txt" の内容にしたがってご利用ください。
 
 
-Setting in addition to jis.tfm / jis.tfm などから追加した設定
+Setting in addition to jis.tfm / jis.tfm から追加した設定
 ------------------------------------------------------------
 
 ### upjis, upjpn for Japanese / 日本語
 
-* Type1: U+FF5F U+3018 U+3016 U+301D
-* Type2: U+FF60 U+3019 U+3017 U+301F
+* Type1: U+FF5F U+3018 U+3016 U+301D U+00AB U+2329 U+301A
+* Type2: U+FF60 U+3019 U+3017 U+301F U+00BB U+232A U+301B U+301E
 * Type3: U+00B7
 * Type5: JIS 0x213D -> U+2014 and U+2015
 
-Unicode | Name | JIS X 0213 面区点 | Name in JIS |
-:------:|------|:----------:|-------------|
-U+FF5F | | 1-02-54 | 始め二重バーレーン
-U+3018 | | 1-02-56 | 始め二重亀甲括弧
-U+3016 | | 1-02-58 | 始めすみ付き括弧(白)
-U+301D | | 1-13-64 | 始めダブルミニュート
-U+FF60 | | 1-02-55 | 終わり二重バーレーン
-U+3019 | | 1-02-57 | 終わり二重亀甲括弧
-U+3017 | | 1-02-59 | 終わりすみ付き括弧(白)
-U+301F | | 1-13-65 | 終わりダブルミニュート
-U+00B7 | | 1-09-14 | 中点（ラテン）
+| Unicode | Name in Unicode                           |   | JIS X 0213 | Name in JIS
+|:------:|--------------------------------------------|:--:|:-------:|--------------------
+| U+FF5F | FULLWIDTH LEFT WHITE PARENTHESIS           | ｟ | 1-02-54 | 始め二重バーレーン
+| U+3018 | LEFT WHITE TORTOISE SHELL BRACKET          | 〘 | 1-02-56 | 始め二重亀甲括弧
+| U+3016 | LEFT WHITE LENTICULAR BRACKET              | 〖 | 1-02-58 | 始めすみ付き括弧(白)
+| U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 | 1-13-64 | 始めダブルミニュート
+| U+FF60 | FULLWIDTH RIGHT WHITE PARENTHESIS          | ｠ | 1-02-55 | 終わり二重バーレーン
+| U+3019 | RIGHT WHITE TORTOISE SHELL BRACKET         | 〙 | 1-02-57 | 終わり二重亀甲括弧
+| U+3017 | RIGHT WHITE LENTICULAR BRACKET             | 〗 | 1-02-59 | 終わりすみ付き括弧(白)
+| U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 | 1-13-65 | 終わりダブルミニュート
+| U+00B7 | MIDDLE DOT                                 | · | 1-09-14 | 中点（ラテン）
+| U+00AB | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  | « | 1-09-08 | 始め二重山括弧引用記号/始めギュメ
+| U+00BB | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK | » | 1-09-18 | 終わり二重山括弧引用記号/終わりギュメ
+| U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  | NA      | NA
+| U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  | NA      | NA
+| U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 | NA      | NA
+| U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 | NA      | NA
+| U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 | NA      | NA
+| U+FF08 | FULLWIDTH LEFT PARENTHESIS                 | （ | NA      | NA
+| U+FF09 | FULLWIDTH RIGHT PARENTHESIS                | ） | NA      | NA
+| U+FF3B | FULLWIDTH LEFT SQUARE BRACKET              | ［ | NA      | NA
+| U+FF3D | FULLWIDTH RIGHT SQUARE BRACKET             | ］ | NA      | NA
+| U+FF5B | FULLWIDTH LEFT CURLY BRACKET               | ｛ | NA      | NA
+| U+FF5D | FULLWIDTH RIGHT CURLY BRACKET              | ｝ | NA      | NA
 
 
 #### About EM DASH & HORIZONTAL BAR / ダッシュ(全角)について

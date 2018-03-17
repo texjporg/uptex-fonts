@@ -2,21 +2,21 @@ vf & tfm font for upTeX/upLaTeX based on "jis font TFM & VF set"
 ================================================================
 
 
-The files in this directory are
+The files in this bundle are
 based on "jis font TFM & VF set"
 by ASCII Corporation (currently ASCII MEDIA WORKS Inc.)
 and modified for upTeX/upLaTeX.
 These are available under the license agreement in "README_ASCII_Corp.txt".
 
-このディレクトリのファイルは、
+このバンドルのファイルは、
 株式会社アスキー(現 株式会社アスキー・メディアワークス)による
 「jisフォントTFM&VFセット」をもとに
 upTeX/upLaTeX向けに改変したものです。
 "README_ASCII_Corp.txt" の内容にしたがってご利用ください。
 
 
-Setting in addition to jis.tfm / jis.tfm から追加した設定
-------------------------------------------------------------
+Added or modified Setting from jis.tfm / jis.tfm から追加・変更した設定
+----------------------------------------------------------------------
 
 ### upjis, upjpn for Japanese / 日本語
 
@@ -25,30 +25,57 @@ Setting in addition to jis.tfm / jis.tfm から追加した設定
 * Type3: U+00B7
 * Type5: JIS 0x213D -> U+2014 and U+2015
 
+### upsch for Simplified Chinese / 中国語簡体字
+
+* Type1: U+FF5F U+3018 U+3016 U+301D U+2329 U+301A
+* Type2: U+FF60 U+3019 U+3017 U+301F U+232A U+301B U+301E
+* Type3: U+00B7
+* Type5: U+2014 and U+2015
+* move from Type3 to Type2 (only horizontal): U+FF1A U+FF1B
+* Type4 (only horizontal): U+FF01 U+FF1F
+
+### upsch for Traditional Chinese / 中国語繁体字
+
+* Type1: U+FF5F U+3018 U+3016 U+301D U+2329 U+301A U+FE59 U+FE5B U+FE5D
+* Type2: U+FF60 U+3019 U+3017 U+301F U+232A U+301B U+301E U+FE5A U+FE5C U+FE5E
+* Type3: U+00B7
+* move from Type2 to Type3: U+3001 U+FF0C
+* move from Type4 to Type3: U+3002 U+FF0E
+* rename from Type5 to Type4: U+2014 and U+2015
+
+### upkor for Korean / 韓国語
+
+* Type1: U+FF5F U+3018 U+3016 U+2329 U+301A
+* Type2: U+FF60 U+3019 U+3017 U+232A U+301B
+* Type3: U+00B7
+* Type5: U+2014 and U+2015
+
 | Unicode | Name in Unicode                           |   | JIS X 0213 | Name in JIS
 |:------:|--------------------------------------------|:--:|:-------:|--------------------
-| U+FF5F | FULLWIDTH LEFT WHITE PARENTHESIS           | ｟ | 1-02-54 | 始め二重バーレーン
-| U+3018 | LEFT WHITE TORTOISE SHELL BRACKET          | 〘 | 1-02-56 | 始め二重亀甲括弧
-| U+3016 | LEFT WHITE LENTICULAR BRACKET              | 〖 | 1-02-58 | 始めすみ付き括弧(白)
-| U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 | 1-13-64 | 始めダブルミニュート
-| U+FF60 | FULLWIDTH RIGHT WHITE PARENTHESIS          | ｠ | 1-02-55 | 終わり二重バーレーン
-| U+3019 | RIGHT WHITE TORTOISE SHELL BRACKET         | 〙 | 1-02-57 | 終わり二重亀甲括弧
-| U+3017 | RIGHT WHITE LENTICULAR BRACKET             | 〗 | 1-02-59 | 終わりすみ付き括弧(白)
-| U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 | 1-13-65 | 終わりダブルミニュート
-| U+00B7 | MIDDLE DOT                                 | · | 1-09-14 | 中点（ラテン）
 | U+00AB | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  | « | 1-09-08 | 始め二重山括弧引用記号/始めギュメ
 | U+00BB | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK | » | 1-09-18 | 終わり二重山括弧引用記号/終わりギュメ
+| U+00B7 | MIDDLE DOT                                 | · | 1-09-14 | 中点（ラテン）
 | U+2329 | LEFT-POINTING ANGLE BRACKET                | 〈  | NA      | NA
 | U+232A | RIGHT-POINTING ANGLE BRACKET               | 〉  | NA      | NA
+| U+3001 | IDEOGRAPHIC COMMA                          | 、 | 1-01-02 | 読点
+| U+3002 | IDEOGRAPHIC FULL STOP                      | 。 | 1-01-03 | 句点
+| U+3016 | LEFT WHITE LENTICULAR BRACKET              | 〖 | 1-02-58 | 始めすみ付き括弧(白)
+| U+3017 | RIGHT WHITE LENTICULAR BRACKET             | 〗 | 1-02-59 | 終わりすみ付き括弧(白)
+| U+3018 | LEFT WHITE TORTOISE SHELL BRACKET          | 〘 | 1-02-56 | 始め二重亀甲括弧
+| U+3019 | RIGHT WHITE TORTOISE SHELL BRACKET         | 〙 | 1-02-57 | 終わり二重亀甲括弧
 | U+301A | LEFT WHITE SQUARE BRACKET                  | 〚 | NA      | NA
 | U+301B | RIGHT WHITE SQUARE BRACKET                 | 〛 | NA      | NA
+| U+301D | REVERSED DOUBLE PRIME QUOTATION MARK       | 〝 | 1-13-64 | 始めダブルミニュート
 | U+301E | DOUBLE PRIME QUOTATION MARK                | 〞 | NA      | NA
-| U+FF08 | FULLWIDTH LEFT PARENTHESIS                 | （ | NA      | NA
-| U+FF09 | FULLWIDTH RIGHT PARENTHESIS                | ） | NA      | NA
-| U+FF3B | FULLWIDTH LEFT SQUARE BRACKET              | ［ | NA      | NA
-| U+FF3D | FULLWIDTH RIGHT SQUARE BRACKET             | ］ | NA      | NA
-| U+FF5B | FULLWIDTH LEFT CURLY BRACKET               | ｛ | NA      | NA
-| U+FF5D | FULLWIDTH RIGHT CURLY BRACKET              | ｝ | NA      | NA
+| U+301F | LOW DOUBLE PRIME QUOTATION MARK            | 〟 | 1-13-65 | 終わりダブルミニュート
+| U+FF01 | FULLWIDTH EXCLAMATION MARK                 | ！ | 1-01-10 | 感嘆符
+| U+FF0C | FULLWIDTH COMMA                            | ， | 1-01-04 | コンマ
+| U+FF0E | FULLWIDTH FULL STOP                        | ． | 1-01-05 | ピリオド
+| U+FF1A | FULLWIDTH COLON                            | ： | 1-01-07 | コロン
+| U+FF1B | FULLWIDTH SEMICOLON                        | ； | 1-01-08 | セミコロン
+| U+FF1F | FULLWIDTH QUESTION MARK                    | ？ | 1-01-09 | 疑問符
+| U+FF5F | FULLWIDTH LEFT WHITE PARENTHESIS           | ｟ | 1-02-54 | 始め二重バーレーン
+| U+FF60 | FULLWIDTH RIGHT WHITE PARENTHESIS          | ｠ | 1-02-55 | 終わり二重バーレーン
 
 
 #### About EM DASH & HORIZONTAL BAR / ダッシュ(全角)について

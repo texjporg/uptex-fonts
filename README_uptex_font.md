@@ -74,8 +74,8 @@ Added or modified Setting from jis.tfm / jis.tfm から追加・変更した設�
 | U+FF1A | FULLWIDTH COLON                            | ： | 1-01-07 | コロン
 | U+FF1B | FULLWIDTH SEMICOLON                        | ； | 1-01-08 | セミコロン
 | U+FF1F | FULLWIDTH QUESTION MARK                    | ？ | 1-01-09 | 疑問符
-| U+FF5F | FULLWIDTH LEFT WHITE PARENTHESIS           | ｟ | 1-02-54 | 始め二重バーレーン
-| U+FF60 | FULLWIDTH RIGHT WHITE PARENTHESIS          | ｠ | 1-02-55 | 終わり二重バーレーン
+| U+FF5F | FULLWIDTH LEFT WHITE PARENTHESIS           | ｟ | 1-02-54 | 始め二重パーレン
+| U+FF60 | FULLWIDTH RIGHT WHITE PARENTHESIS          | ｠ | 1-02-55 | 終わり二重パーレン
 
 
 #### About EM DASH & HORIZONTAL BAR / ダッシュ(全角)について

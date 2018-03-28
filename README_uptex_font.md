@@ -34,7 +34,7 @@ Added or modified Setting from jis.tfm / jis.tfm から追加・変更した設�
 * move from Type3 to Type2 (only horizontal): U+FF1A U+FF1B
 * Type4 (only horizontal): U+FF01 U+FF1F
 
-### upsch for Traditional Chinese / 中国語繁体字
+### uptch for Traditional Chinese / 中国語繁体字
 
 * Type1: U+FF5F U+3018 U+3016 U+301D U+2329 U+301A U+FE59 U+FE5B U+FE5D
 * Type2: U+FF60 U+3019 U+3017 U+301F U+232A U+301B U+301E U+FE5A U+FE5C U+FE5E
@@ -94,7 +94,7 @@ JIS -> Unicode conversion is ambiguous and depends on tables.
 ChangeLog
 ---------
 
-### uptex-fonts-20180317
+### uptex-fonts-20180328
 * cmap/cid_mapping.md,UniJISup-UTF16-V,UniJIS2004up-UTF16-V:
   Add U+301E.
 * source/punctuation.md,Makefile,makepl.perl,upjisr-h{,-hk}.pl,upjisr-v.pl,

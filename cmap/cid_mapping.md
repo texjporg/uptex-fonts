@@ -34,7 +34,7 @@ CID mapping memo
 |始めダブルミニュート  |REVERSED DOUBLE PRIME QUOTATION MARK|〝| U+301D |  7608  |  7956   |
 |                      |DOUBLE PRIME QUOTATION MARK         |〞| U+301E | 12170  | (12170) |
 |終わりダブルミニュート|LOW DOUBLE PRIME QUOTATION MARK     |〟| U+301F |  7609  |  7957   |
-|コロン                |FULLWIDTH COLON                     |：| U+FF1A |   639  |  (639)  |
+|コロン                |FULLWIDTH COLON                     |：| U+FF1A |   639  | 12101 |
 |セミコロン            |FULLWIDTH SEMICOLON                 |；| U+FF1B |   640  |  (640)  |
 
 |                      |                                    |  | UCS    | UniJISup-UTF16-H | -V   |
@@ -46,7 +46,7 @@ CID mapping memo
 |始めダブルミニュート  |REVERSED DOUBLE PRIME QUOTATION MARK|〝| U+301D |  7608  |  7956   |
 |                      |DOUBLE PRIME QUOTATION MARK         |〞| U+301E | 12170  | [7957]  |
 |終わりダブルミニュート|LOW DOUBLE PRIME QUOTATION MARK     |〟| U+301F |  7609  |  7957   |
-|コロン                |FULLWIDTH COLON                     |：| U+FF1A |   639  | [12101] |
+|コロン                |FULLWIDTH COLON                     |：| U+FF1A |   639  | 12101 |
 |セミコロン            |FULLWIDTH SEMICOLON                 |；| U+FF1B |   640  | (640)   |
 
 
@@ -68,8 +68,11 @@ CID mapping memo
 
 []が UniJISup-UTF16-{H,V} で追加したCID指定。
 
-UniJISup-UTF16-V では、上記の表以外に UniJISPro-UCS2-V に倣って
-U+337B..U+337E の縦組み字形 12044..12041 を追加。
+オリジナルの UniJIS-UTF16-V Version 1.007 (Version 07/30/2018)で
+U+337B..337E(元号の組文字), U+FF1A(FULLWIDTH COLON) の縦組み字形が追加された。
+
+UniJISup-UTF16-V では、上記の表以外に UniJISPro-UCS2-V, UniJIS-UTF16-V(1.007以降) に倣って
+U+337B..337E の縦組み字形 12044..12041 を追加。
 
 UniJISup-* で追加したCIDは全てAdobe-Japan1-4の範囲("Pro", CID15443まで)に収まっているが、
 一部はAdobe-Japan1-3の範囲("Std", CID9353まで)を超えている。

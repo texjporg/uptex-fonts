@@ -4,11 +4,11 @@
 %%IncludeResource: ProcSet (CIDInit)
 %%IncludeResource: CMap (UniJISup-UTF16-H)
 %%BeginResource: CMap (UniJISup-UTF16-V)
-%%Title: (UniJISup-UTF16-V Adobe Japan1 6)
-%%Version: 1.001
+%%Title: (UniJISup-UTF16-V Adobe Japan1 7)
+%%Version: 1.002
 %%Copyright: -----------------------------------------------------------
-%%Copyright: Copyright 1990-2015 Adobe Systems Incorporated.
-%%Copyright: Copyright 2017-2018 Japanese TeX Development Community
+%%Copyright: Copyright 1990-2018 Adobe Systems Incorporated.
+%%Copyright: Copyright 2017-2019 Japanese TeX Development Community
 %%Copyright: All rights reserved.
 %%Copyright:
 %%Copyright: Redistribution and use in source and binary forms, with or
@@ -43,7 +43,7 @@
 %%Copyright: OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 %%Copyright: SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %%Copyright: -----------------------------------------------------------
-%%comment: This CMap is based on UniJIS-UTF16-V Version 1.006 and modified.
+%%comment: This CMap is based on UniJIS-UTF16-V Version 1.007 and modified.
 %%comment: XUID is omitted.
 %%EndComments
 
@@ -58,11 +58,11 @@ begincmap
 /CIDSystemInfo 3 dict dup begin
   /Registry (Adobe) def
   /Ordering (Japan1) def
-  /Supplement 6 def
+  /Supplement 7 def
 end def
 
 /CMapName /UniJISup-UTF16-V def
-/CMapVersion 1.001 def
+/CMapVersion 1.002 def
 /CMapType 1 def
 
 /WMode 1 def
@@ -170,7 +170,7 @@ end def
 <3041> 7918
 endcidchar
 
-92 begincidchar
+93 begincidchar
 <3043> 7919
 <3045> 7920
 <3047> 7921
@@ -194,6 +194,7 @@ endcidchar
 <30e7> 7936
 <30ee> 7937
 <30fc> 7891
+<32ff> 23059
 <3300> 8350
 <3303> 8338
 <3304> 11960

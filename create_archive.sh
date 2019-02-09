@@ -48,7 +48,11 @@ mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/jis
 mv $TMP/$PROJECT/vf/up* $TMP/$PROJECT/fonts/vf/$PROJECT/jis
 
 rm $TMP/$PROJECT/Makefile
-rmdir $TMP/$PROJECT/{cmap,tfm,vf}
+
+rmdir $TMP/$PROJECT/source
+rmdir $TMP/$PROJECT/cmap
+rmdir $TMP/$PROJECT/tfm
+rmdir $TMP/$PROJECT/vf
 
 cd $TMP/$PROJECT && zip -r $TMP/$PROJECT.tds.zip *
 cd $PWDF

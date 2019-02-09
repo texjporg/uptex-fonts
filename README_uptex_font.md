@@ -96,7 +96,7 @@ ChangeLog
 
 ### uptex-fonts-20190209
 * cmap/UTF8-UTF16:
-  Updated (Version: 1.005).
+  Updated (Version: 1.006).
 * cmap/cid_mapping.md,UniJISup-UTF16-V,UniJIS2004up-UTF16-V:
   Add U+32FF.
 

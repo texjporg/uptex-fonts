@@ -69,7 +69,7 @@ CID mapping memo
 []が UniJISup-UTF16-{H,V} で追加したCID指定。
 
 オリジナルの UniJIS-UTF16-{H,V} (Version 07/30/2018)に
-U+32FF (新元号の組文字, CID:23058..23059) が追加された。
+U+32FF (新元号「令和」の組文字, CID:23058..23059) が追加された。
 また、UniJIS-UTF16-V (Version 07/30/2018)に
 U+337B..337E(元号の組文字), U+FF1A(FULLWIDTH COLON) の縦組み字形が追加された。
 UniJISup-UTF16-{H,V} はこれらを踏襲した。

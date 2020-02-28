@@ -1,0 +1,9 @@
+*~
+*.zip
+
+test*/
+source/*.tfm
+source/*.vf
+source/tfm*/
+source/vf*/
+

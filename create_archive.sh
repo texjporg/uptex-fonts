@@ -12,6 +12,7 @@ fi
 
 echo " * Create $PROJECT.tds.zip"
 git archive --format=tar --prefix=$PROJECT/ HEAD | (cd $TMP && tar xf -)
+rm $TMP/$PROJECT/.gitignore
 rm $TMP/$PROJECT/create_archive.sh
 rm -rf $TMP/$PROJECT/00uptex-0.30
 perl -pi.bak -e "s/\\\$RELEASEDATE/$RELEASEDATE/g" $TMP/$PROJECT/README.md
@@ -61,6 +62,7 @@ rm -rf $TMP/$PROJECT
 echo
 echo " * Create $PROJECT.zip ($RELEASEDATE)"
 git archive --format=tar --prefix=$PROJECT/ HEAD | (cd $TMP && tar xf -)
+rm $TMP/$PROJECT/.gitignore
 rm $TMP/$PROJECT/create_archive.sh
 rm $TMP/$PROJECT/Makefile
 rm -rf $TMP/$PROJECT/00uptex-0.30

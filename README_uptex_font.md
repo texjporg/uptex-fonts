@@ -94,6 +94,12 @@ JIS -> Unicode conversion is ambiguous and depends on tables.
 ChangeLog
 ---------
 
+### uptex-fonts-20200229
+* cmap/UTF8-UTF16:
+  Updated (Version: 1.007).
+* cmap/UniJISup-UTF16-H,UniJIS2004up-UTF16-H:
+  Refer to Adobe-Japan1-7 (2019/07/30).
+
 ### uptex-fonts-20190209
 * cmap/UTF8-UTF16:
   Updated (Version: 1.006).
@@ -130,3 +136,8 @@ ChangeLog
 
 ### v20110507a [2011/05/07] TTK
 * re-package for upTeX/upLaTeX based on uptex-0.30 distribution.
+
+
+References
+----------
+1.  [Adobe Type Tools / CMap Resources @ GitHub](https://github.com/adobe-type-tools/cmap-resources)

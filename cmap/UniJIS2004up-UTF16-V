@@ -5,10 +5,10 @@
 %%IncludeResource: CMap (UniJIS2004up-UTF16-H)
 %%BeginResource: CMap (UniJIS2004up-UTF16-V)
 %%Title: (UniJIS2004up-UTF16-V Adobe Japan1 7)
-%%Version: 1.001
+%%Version: 1.003
 %%Copyright: -----------------------------------------------------------
 %%Copyright: Copyright 1990-2019 Adobe.
-%%Copyright: Copyright 2017-2019 Japanese TeX Development Community
+%%Copyright: Copyright 2017-2022 Japanese TeX Development Community
 %%Copyright: All rights reserved.
 %%Copyright:
 %%Copyright: Redistribution and use in source and binary forms, with or
@@ -61,7 +61,7 @@ begincmap
 end def
 
 /CMapName /UniJIS2004up-UTF16-V def
-/CMapVersion 1.002 def
+/CMapVersion 1.003 def
 /CMapType 1 def
 
 /WMode 1 def
@@ -169,7 +169,7 @@ end def
 <3041> 7918
 endcidchar
 
-93 begincidchar
+95 begincidchar
 <3043> 7919
 <3045> 7920
 <3047> 7921
@@ -263,6 +263,8 @@ endcidchar
 <ff5d> 7906
 <ff5e> 7894
 <ffe3> 7889
+<d82cdd32> 12270
+<d82cdd55> 12272
 endcidchar
 
 37 begincidrange

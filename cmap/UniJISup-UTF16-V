@@ -5,11 +5,10 @@
 %%IncludeResource: CMap (UniJISup-UTF16-H)
 %%BeginResource: CMap (UniJISup-UTF16-V)
 %%Title: (UniJISup-UTF16-V Adobe Japan1 7)
-%%Version: 1.003
+%%Version: 1.004
 %%Copyright: -----------------------------------------------------------
-%%Copyright: Copyright 1990-2019 Adobe.
-%%Copyright: Copyright 2017-2022 Japanese TeX Development Community
-%%Copyright: All rights reserved.
+%%Copyright: Copyright 1990-2022 Adobe. All rights reserved.
+%%Copyright: Copyright 2017-2023 Japanese TeX Development Community
 %%Copyright:
 %%Copyright: Redistribution and use in source and binary forms, with or
 %%Copyright: without modification, are permitted provided that the
@@ -25,8 +24,8 @@
 %%Copyright: provided with the distribution. 
 %%Copyright:
 %%Copyright: Neither the name of Adobe nor the names of its contributors
-%%Copyright: may be used to endorse or promote products derived from
-%%Copyright: this software without specific prior written permission.
+%%Copyright: may be used to endorse or promote products derived from this
+%%Copyright: software without specific prior written permission. 
 %%Copyright:
 %%Copyright: THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
 %%Copyright: CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
@@ -42,7 +41,7 @@
 %%Copyright: OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 %%Copyright: SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %%Copyright: -----------------------------------------------------------
-%%comment: This CMap is based on UniJIS-UTF16-V Version 1.008 and modified.
+%%comment: This CMap is based on UniJIS-UTF16-V Version 1.009 and modified.
 %%comment: XUID is omitted.
 %%EndComments
 
@@ -61,7 +60,7 @@ begincmap
 end def
 
 /CMapName /UniJISup-UTF16-V def
-/CMapVersion 1.003 def
+/CMapVersion 1.004 def
 /CMapType 1 def
 
 /WMode 1 def
@@ -251,6 +250,8 @@ endcidchar
 <337d> 12042
 <337e> 12041
 <337f> 8324
+<d82cdd32> 12270
+<d82cdd55> 12272
 <ff0c> 8268
 <ff0e> 8274
 <ff1a> 12101
@@ -263,8 +264,6 @@ endcidchar
 <ff5d> 7906
 <ff5e> 7894
 <ffe3> 7889
-<d82cdd32> 12270
-<d82cdd55> 12272
 endcidchar
 
 37 begincidrange

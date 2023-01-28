@@ -70,7 +70,7 @@ Brackets
 | U+FF62 | HALFWIDTH LEFT CORNER BRACKET              | ｢ |H|Ps|R |(半角カナ)|        | 328   | (328) | NA    |
 | U+FF63 | HALFWIDTH RIGHT CORNER BRACKET             | ｣ |H|Pe|R |(半角カナ)|        | 329   | (329) | NA    |
 
-* UniJIS-*-{H,V} は、UniJIS-UTF16-{H,V} を示す。UniJIS-UCS-{H,V}では一部異なっている。
+* UniJIS-*-{H,V} は、UniJIS-UTF16-{H,V} を示す。UniJIS-UCS2-{H,V}では一部異なっている。
 * UniJIS-*-V の "()"は、縦組みの設定が無くHの字形がフォールバックされることを示す。
 * "width"は"East Asian Width"。N: Neutral (= Not East Asian), A: Ambiguos, W: Wide, Na: Narrow, F: Fullwidth, H: Halfwidth
 * "gc"は"General Category Value"。Ps: Open_Punctuation, Pe: Close_Punctuation, Pi: Initial_Punctuation, Pf: Final_Punctuation

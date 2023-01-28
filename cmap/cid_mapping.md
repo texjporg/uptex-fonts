@@ -81,7 +81,8 @@ UniJISup-* で追加したCIDは全てAdobe-Japan1-4の範囲("Pro", CID15443ま
 一部はAdobe-Japan1-3の範囲("Std", CID9353まで)を超えている。
 
 
-オリジナルの UniJIS-UTF16-{H,V}にはまだ割り当てがない小書き仮名「こ」「コ」を追加した。
+小書き仮名「こ」「コ」はオリジナルの UniJIS-UTF16-{H,V} (Version 05/18/2022) "January 18, 2023 Release"に追加された。
+UniJISup-UTF16-{H,V} はこれらを踏襲した。
 
 | AJ1-7 | variant |  character name  |  Unicode-15.0       |  |
 |-------|---------|------------------|---------------------|--|

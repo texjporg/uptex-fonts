@@ -94,6 +94,12 @@ JIS -> Unicode conversion is ambiguous and depends on tables.
 ChangeLog
 ---------
 
+### uptex-fonts-20230128
+* cmap/UTF8-UTF16:
+  Updated (Version: 1.009).
+* cmap/UniJISup-UTF16-{H,V},UniJIS2004up-UTF16-{H,V}:
+  Refer to Adobe-Japan1-7 (2022/05/18).
+
 ### uptex-fonts-20220310
 * cmap/UTF8-UTF16:
   Updated (Version: 1.008).

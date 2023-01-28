@@ -1,0 +1,79 @@
+% -*- coding: utf-8 -*-
+
+\documentclass[a4paper,titlepage,draft,twocolumn]{ujarticle}
+
+\usepackage[uplatex]{otf}
+\usepackage[T1]{fontenc}
+%\usepackage{bookman}
+%\usepackage{helvet}
+\usepackage{mathptmx}
+%\usepackage{mathpazo}
+%\usepackage{courier}
+%\usepackage{txfonts}
+\usepackage{plext}
+\usepackage{graphicx}
+%\usepackage{redeffont}
+\usepackage{textcomp}
+
+\AtBeginDvi{\special{papersize=\the\paperwidth,\the\paperheight}}
+
+\pagestyle{empty}
+
+\makeatother
+\begin{document}
+\parindent0mm
+with japanese-otf package\\
+
+噂 謎 煎餅\\
+灘 芦屋 祇園 逢坂 葛飾 茨城 逗子 辻堂 鯖江
+
+\section{Horizontal Writing}
+\parbox<y>{13.5zw}{
+\fbox{\hbox{\large ‘回’“回”〝回〞〝回〟}}\\
+\fbox{\hbox{\large 全角：コロン}}\\
+\fbox{\hbox{\large ←↑↓→ / ➡ / ⬅⬆⬇⮕}}\\
+\fbox{\hbox{\large ☜☝☟☞ / ⇦⇧⇩⇨}}\\
+\fbox{\hbox{\large ㍾㍽㍼㍻㋿}}\\
+\fbox{\hbox{\large ㌐㌹㌨㍍㌰㌲㍿ｱｲｳｴｵ}}\\
+\fbox{\hbox{\large ＴＬＴ． TLT.}}
+}
+
+\section{Vertical Writing}
+\parbox<t>{13.5zw}{
+\fbox{\hbox{\large ‘回’“回”〝回〞〝回〟}}\\
+\fbox{\hbox{\large 全角：コロン}}\\
+\fbox{\hbox{\large ←↑↓→ / ➡ / ⬅⬆⬇⮕}}\\
+\fbox{\hbox{\large ☜☝☟☞ / ⇦⇧⇩⇨}}\\
+\fbox{\hbox{\large ㍾㍽㍼㍻㋿}}\\
+\fbox{\hbox{\large ㌐㌹㌨㍍㌰㌲㍿}}\\
+\fbox{\hbox{\large ＲＴＴ． RTR.}}
+}
+
+\section{Horizontal Writing, Rotate 270\textdegree}
+\rotatebox{-90}{
+\parbox<y>{13.5zw}{
+\fbox{\hbox{\large ‘回’“回”〝回〞〝回〟}}\\
+\fbox{\hbox{\large 全角：コロン}}\\
+\fbox{\hbox{\large ←↑↓→ / ➡ / ⬅⬆⬇⮕}}\\
+\fbox{\hbox{\large ☜☝☟☞ / ⇦⇧⇩⇨}}\\
+\fbox{\hbox{\large ㍾㍽㍼㍻㋿}}\\
+\fbox{\hbox{\large ㌐㌹㌨㍍㌰㌲㍿ｱｲｳｴｵ}}\\
+\fbox{\hbox{\large ＲＴＲ． RTR.}}
+}
+}
+
+
+\section{Vertical Writing, Rotate 90\textdegree}
+\rotatebox{90}{
+\parbox<t>{13.5zw}{
+\fbox{\hbox{\large ‘回’“回”〝回〞〝回〟}}\\
+\fbox{\hbox{\large 全角：コロン}}\\
+\fbox{\hbox{\large ←↑↓→ / ➡ / ⬅⬆⬇⮕}}\\
+\fbox{\hbox{\large ☜☝☟☞ / ⇦⇧⇩⇨}}\\
+\fbox{\hbox{\large ㍾㍽㍼㍻㋿}}\\
+\fbox{\hbox{\large ㌐㌹㌨㍍㌰㌲㍿}}\\
+\fbox{\hbox{\large ＴＬＬ． TLT.}}
+}
+}
+
+\end{document}

@@ -1,0 +1,31 @@
+rml  H HaranoAjiMincho-Regular.otf
+rmlv V HaranoAjiMincho-Regular.otf
+gbm  H HaranoAjiGothic-Regular.otf
+gbmv V HaranoAjiGothic-Regular.otf
+
+uprml-h UniJISup-UTF16-H HaranoAjiMincho-Regular.otf
+uprml-v UniJISup-UTF16-V HaranoAjiMincho-Regular.otf
+upgbm-h UniJISup-UTF16-H HaranoAjiGothic-Regular.otf
+upgbm-v UniJISup-UTF16-V HaranoAjiGothic-Regular.otf
+uprml-hq UniJISup-UTF16-H HaranoAjiMincho-Regular.otf
+upgbm-hq UniJISup-UTF16-H HaranoAjiGothic-Regular.otf
+
+hminr-h H HaranoAjiMincho-Regular.otf
+hminr-v V HaranoAjiMincho-Regular.otf
+hgothr-h H HaranoAjiGothic-Regular.otf
+hgothr-v V HaranoAjiGothic-Regular.otf
+
+uphminr-h UniJISup-UTF16-H HaranoAjiMincho-Regular.otf
+uphminr-v UniJISup-UTF16-V HaranoAjiMincho-Regular.otf
+uphgothr-h UniJISup-UTF16-H HaranoAjiGothic-Regular.otf
+uphgothr-v UniJISup-UTF16-V HaranoAjiGothic-Regular.otf
+
+otf-ujmr-h UniJISup-UTF16-H HaranoAjiMincho-Regular.otf
+otf-ujmr-v UniJISup-UTF16-V HaranoAjiMincho-Regular.otf
+otf-ujgr-h UniJISup-UTF16-H HaranoAjiGothic-Regular.otf
+otf-ujgr-v UniJISup-UTF16-V HaranoAjiGothic-Regular.otf
+
+otf-cjmr-h Identity-H HaranoAjiMincho-Regular.otf
+otf-cjmr-v Identity-V HaranoAjiMincho-Regular.otf
+otf-cjgr-h Identity-H HaranoAjiGothic-Regular.otf
+otf-cjgr-v Identity-V HaranoAjiGothic-Regular.otf

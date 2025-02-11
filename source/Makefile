@@ -100,6 +100,18 @@ vf_cjk:
 	$(MAKEJVFX) -e -t makejvf-uptch.cnf uptchrm-v.tfm upmsl-v
 	$(MAKEJVFX) -e -t makejvf-uptch.cnf uptchgt-v.tfm upmhm-v
 
+svs_entry:
+	perl mk_svs_entry.perl svs_list_j.txt > svs_list_j.entry
+	perl mk_svs_entry.perl svs_list_c.txt > svs_list_c.entry
+	perl mk_svs_entry.perl svs_list_t.txt > svs_list_t.entry
+	perl mk_svs_entry.perl svs_list_k.txt > svs_list_k.entry
+
+svs_tex:
+	perl -CSD mk_svs_tex.perl svs_list_j.txt > svs_list_j.tex
+	perl -CSD mk_svs_tex.perl svs_list_c.txt > svs_list_c.tex
+	perl -CSD mk_svs_tex.perl svs_list_t.txt > svs_list_t.tex
+	perl -CSD mk_svs_tex.perl svs_list_k.txt > svs_list_k.tex
+
 move:
 	mkdir -pv ../tfm ../vf
 	mv *.tfm ../tfm

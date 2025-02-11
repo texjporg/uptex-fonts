@@ -9,7 +9,7 @@ MAKEJVFJ  = $(MAKEJVF) -i -u jis
 MAKEJVFJQ = $(MAKEJVF) -i -u jisq
 MAKEJVFX  = $(MAKEJVF) -i -u custom
 
-all: tfm vf pstfm
+all: tfm vf vf_cjk pstfm
 
 pl:
 	$(TFTOPL) `kpsewhich jis.tfm` jis.pl
@@ -63,6 +63,8 @@ vf:
 	$(MAKEJVFX) -e -t makejvf-upjis.cnf upjisg-v.tfm upgbm-v
 	$(MAKEJVFJQ) -e upjisr-hq.tfm uprml-hq
 	$(MAKEJVFJQ) -e upjisg-hq.tfm upgbm-hq
+
+vf_cjk:
 #	$(MAKEJVFJ3) -e -H -U upjisr-hq upjpnrm-h.tfm uprml-h
 #	$(MAKEJVFJ3) -e -H -U upjisg-hq upjpngt-h.tfm upgbm-h
 #	$(MAKEJVFJ3) -e upjpnrm-v.tfm uprml-v

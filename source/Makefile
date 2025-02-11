@@ -67,22 +67,34 @@ vf:
 #	$(MAKEJVFJ3) -e -H -U upjisg-hq upjpngt-h.tfm upgbm-h
 #	$(MAKEJVFJ3) -e upjpnrm-v.tfm uprml-v
 #	$(MAKEJVFJ3) -e upjpngt-v.tfm upgbm-v
+#	$(MAKEJVFK) -e upkorrm-h.tfm uphysmjm-h
+#	$(MAKEJVFK) -e upkorgt-h.tfm uphygt-h
+#	$(MAKEJVFK) -e upkorrm-v.tfm uphysmjm-v
+#	$(MAKEJVFK) -e upkorgt-v.tfm uphygt-v
+#	$(MAKEJVFG3) -e upschrm-h.tfm upstsl-h
+#	$(MAKEJVFG3) -e upschgt-h.tfm upstht-h
+#	$(MAKEJVFG3) -e upschrm-v.tfm upstsl-v
+#	$(MAKEJVFG3) -e upschgt-v.tfm upstht-v
+#	$(MAKEJVFC3) -e uptchrm-h.tfm upmsl-h
+#	$(MAKEJVFC3) -e uptchgt-h.tfm upmhm-h
+#	$(MAKEJVFC3) -e uptchrm-v.tfm upmsl-v
+#	$(MAKEJVFC3) -e uptchgt-v.tfm upmhm-v
 	$(MAKEJVFX) -e -t makejvf-upjpn.cnf -H -U upjisr-hq upjpnrm-h.tfm uprml-h
 	$(MAKEJVFX) -e -t makejvf-upjpn.cnf -H -U upjisg-hq upjpngt-h.tfm upgbm-h
 	$(MAKEJVFX) -e -t makejvf-upjpn.cnf upjpnrm-v.tfm uprml-v
 	$(MAKEJVFX) -e -t makejvf-upjpn.cnf upjpngt-v.tfm upgbm-v
-	$(MAKEJVFK) -e upkorrm-h.tfm uphysmjm-h
-	$(MAKEJVFK) -e upkorgt-h.tfm uphygt-h
-	$(MAKEJVFK) -e upkorrm-v.tfm uphysmjm-v
-	$(MAKEJVFK) -e upkorgt-v.tfm uphygt-v
-	$(MAKEJVFG3) -e upschrm-h.tfm upstsl-h
-	$(MAKEJVFG3) -e upschgt-h.tfm upstht-h
-	$(MAKEJVFG3) -e upschrm-v.tfm upstsl-v
-	$(MAKEJVFG3) -e upschgt-v.tfm upstht-v
-	$(MAKEJVFC3) -e uptchrm-h.tfm upmsl-h
-	$(MAKEJVFC3) -e uptchgt-h.tfm upmhm-h
-	$(MAKEJVFC3) -e uptchrm-v.tfm upmsl-v
-	$(MAKEJVFC3) -e uptchgt-v.tfm upmhm-v
+	$(MAKEJVFX) -e -t makejvf-upkor.cnf upkorrm-h.tfm uphysmjm-h
+	$(MAKEJVFX) -e -t makejvf-upkor.cnf upkorgt-h.tfm uphygt-h
+	$(MAKEJVFX) -e -t makejvf-upkor.cnf upkorrm-v.tfm uphysmjm-v
+	$(MAKEJVFX) -e -t makejvf-upkor.cnf upkorgt-v.tfm uphygt-v
+	$(MAKEJVFX) -e -t makejvf-upsch.cnf upschrm-h.tfm upstsl-h
+	$(MAKEJVFX) -e -t makejvf-upsch.cnf upschgt-h.tfm upstht-h
+	$(MAKEJVFX) -e -t makejvf-upsch.cnf upschrm-v.tfm upstsl-v
+	$(MAKEJVFX) -e -t makejvf-upsch.cnf upschgt-v.tfm upstht-v
+	$(MAKEJVFX) -e -t makejvf-uptch.cnf uptchrm-h.tfm upmsl-h
+	$(MAKEJVFX) -e -t makejvf-uptch.cnf uptchgt-h.tfm upmhm-h
+	$(MAKEJVFX) -e -t makejvf-uptch.cnf uptchrm-v.tfm upmsl-v
+	$(MAKEJVFX) -e -t makejvf-uptch.cnf uptchgt-v.tfm upmhm-v
 
 move:
 	mkdir -pv ../tfm ../vf

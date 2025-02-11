@@ -64,23 +64,25 @@ vf:
 	$(MAKEJVFJQ) -e upjisr-hq.tfm uprml-hq
 	$(MAKEJVFJQ) -e upjisg-hq.tfm upgbm-hq
 
+vf_cjk_conventional:
+	$(MAKEJVFJ3) -e -H -U upjisr-hq upjpnrm-h.tfm uprml-h
+	$(MAKEJVFJ3) -e -H -U upjisg-hq upjpngt-h.tfm upgbm-h
+	$(MAKEJVFJ3) -e upjpnrm-v.tfm uprml-v
+	$(MAKEJVFJ3) -e upjpngt-v.tfm upgbm-v
+	$(MAKEJVFK) -e upkorrm-h.tfm uphysmjm-h
+	$(MAKEJVFK) -e upkorgt-h.tfm uphygt-h
+	$(MAKEJVFK) -e upkorrm-v.tfm uphysmjm-v
+	$(MAKEJVFK) -e upkorgt-v.tfm uphygt-v
+	$(MAKEJVFG3) -e upschrm-h.tfm upstsl-h
+	$(MAKEJVFG3) -e upschgt-h.tfm upstht-h
+	$(MAKEJVFG3) -e upschrm-v.tfm upstsl-v
+	$(MAKEJVFG3) -e upschgt-v.tfm upstht-v
+	$(MAKEJVFC3) -e uptchrm-h.tfm upmsl-h
+	$(MAKEJVFC3) -e uptchgt-h.tfm upmhm-h
+	$(MAKEJVFC3) -e uptchrm-v.tfm upmsl-v
+	$(MAKEJVFC3) -e uptchgt-v.tfm upmhm-v
+
 vf_cjk:
-#	$(MAKEJVFJ3) -e -H -U upjisr-hq upjpnrm-h.tfm uprml-h
-#	$(MAKEJVFJ3) -e -H -U upjisg-hq upjpngt-h.tfm upgbm-h
-#	$(MAKEJVFJ3) -e upjpnrm-v.tfm uprml-v
-#	$(MAKEJVFJ3) -e upjpngt-v.tfm upgbm-v
-#	$(MAKEJVFK) -e upkorrm-h.tfm uphysmjm-h
-#	$(MAKEJVFK) -e upkorgt-h.tfm uphygt-h
-#	$(MAKEJVFK) -e upkorrm-v.tfm uphysmjm-v
-#	$(MAKEJVFK) -e upkorgt-v.tfm uphygt-v
-#	$(MAKEJVFG3) -e upschrm-h.tfm upstsl-h
-#	$(MAKEJVFG3) -e upschgt-h.tfm upstht-h
-#	$(MAKEJVFG3) -e upschrm-v.tfm upstsl-v
-#	$(MAKEJVFG3) -e upschgt-v.tfm upstht-v
-#	$(MAKEJVFC3) -e uptchrm-h.tfm upmsl-h
-#	$(MAKEJVFC3) -e uptchgt-h.tfm upmhm-h
-#	$(MAKEJVFC3) -e uptchrm-v.tfm upmsl-v
-#	$(MAKEJVFC3) -e uptchgt-v.tfm upmhm-v
 	$(MAKEJVFX) -e -t makejvf-upjpn.cnf -H -U upjisr-hq upjpnrm-h.tfm uprml-h
 	$(MAKEJVFX) -e -t makejvf-upjpn.cnf -H -U upjisg-hq upjpngt-h.tfm upgbm-h
 	$(MAKEJVFX) -e -t makejvf-upjpn.cnf upjpnrm-v.tfm uprml-v

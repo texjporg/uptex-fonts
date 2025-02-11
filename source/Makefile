@@ -9,7 +9,8 @@ MAKEJVFJ  = $(MAKEJVF) -i -u jis
 MAKEJVFJQ = $(MAKEJVF) -i -u jisq
 MAKEJVFX  = $(MAKEJVF) -i -u custom
 
-all: tfm vf vf_cjk pstfm
+all: tfm vf vf_cjk add_svs_all pstfm
+all_conventional: tfm vf vf_cjk_conventional pstfm
 
 pl:
 	$(TFTOPL) `kpsewhich jis.tfm` jis.pl
@@ -111,6 +112,30 @@ svs_tex:
 	perl -CSD mk_svs_tex.perl svs_list_c.txt > svs_list_c.tex
 	perl -CSD mk_svs_tex.perl svs_list_t.txt > svs_list_t.tex
 	perl -CSD mk_svs_tex.perl svs_list_k.txt > svs_list_k.tex
+
+add_svs_all: add_svs_gen add_svs_remove
+
+add_svs_gen:
+	for hv in h v ; do \
+	for fnt in rm gt ; do \
+		echo "generating (" $$fnt ", " $$hv ")..." ; \
+		jfmutil vf2zvp0 upjpn$$fnt-$$hv.vf upjpn$$fnt-$$hv-00.zvp0 ; \
+		jfmutil vf2zvp0 upsch$$fnt-$$hv.vf upsch$$fnt-$$hv-00.zvp0 ; \
+		jfmutil vf2zvp0 uptch$$fnt-$$hv.vf uptch$$fnt-$$hv-00.zvp0 ; \
+		jfmutil vf2zvp0 upkor$$fnt-$$hv.vf upkor$$fnt-$$hv-00.zvp0 ; \
+		cat upjpn$$fnt-$$hv-00.zvp0 svs_list_j.entry > upjpn$$fnt-$$hv-01.zvp0 ; \
+		cat upsch$$fnt-$$hv-00.zvp0 svs_list_c.entry > upsch$$fnt-$$hv-01.zvp0 ; \
+		cat uptch$$fnt-$$hv-00.zvp0 svs_list_t.entry > uptch$$fnt-$$hv-01.zvp0 ; \
+		cat upkor$$fnt-$$hv-00.zvp0 svs_list_k.entry > upkor$$fnt-$$hv-01.zvp0 ; \
+		jfmutil zvp02vf upjpn$$fnt-$$hv-01.zvp0 upjpn$$fnt-$$hv.vf ; \
+		jfmutil zvp02vf upsch$$fnt-$$hv-01.zvp0 upsch$$fnt-$$hv.vf ; \
+		jfmutil zvp02vf uptch$$fnt-$$hv-01.zvp0 uptch$$fnt-$$hv.vf ; \
+		jfmutil zvp02vf upkor$$fnt-$$hv-01.zvp0 upkor$$fnt-$$hv.vf ; \
+	done ; \
+	done
+
+add_svs_remove:
+	rm up*-[hv]-0[01].zvp0
 
 move:
 	mkdir -pv ../tfm ../vf

@@ -102,35 +102,28 @@ vf_cjk:
 	$(MAKEJVFX) -e -t makejvf-uptch.cnf uptchgt-v.tfm upmhm-v
 
 svs_entry:
-	perl mk_svs_entry.perl svs_list_j.txt > svs_list_j.entry
-	perl mk_svs_entry.perl svs_list_c.txt > svs_list_c.entry
-	perl mk_svs_entry.perl svs_list_t.txt > svs_list_t.entry
-	perl mk_svs_entry.perl svs_list_k.txt > svs_list_k.entry
+	perl mk_svs_entry.perl svs_list_j.txt > svs_list_jpn.entry
+	perl mk_svs_entry.perl svs_list_c.txt > svs_list_sch.entry
+	perl mk_svs_entry.perl svs_list_t.txt > svs_list_tch.entry
+	perl mk_svs_entry.perl svs_list_k.txt > svs_list_kor.entry
 
 svs_tex:
-	perl -CSD mk_svs_tex.perl svs_list_j.txt > svs_list_j.tex
-	perl -CSD mk_svs_tex.perl svs_list_c.txt > svs_list_c.tex
-	perl -CSD mk_svs_tex.perl svs_list_t.txt > svs_list_t.tex
-	perl -CSD mk_svs_tex.perl svs_list_k.txt > svs_list_k.tex
+	perl -CSD mk_svs_tex.perl svs_list_j.txt > svs_list_jpn.tex
+	perl -CSD mk_svs_tex.perl svs_list_c.txt > svs_list_sch.tex
+	perl -CSD mk_svs_tex.perl svs_list_t.txt > svs_list_tch.tex
+	perl -CSD mk_svs_tex.perl svs_list_k.txt > svs_list_kor.tex
 
 add_svs_all: add_svs_gen add_svs_remove
 
 add_svs_gen:
 	for hv in h v ; do \
 	for fnt in rm gt ; do \
-		echo "generating (" $$fnt ", " $$hv ")..." ; \
-		jfmutil vf2zvp0 upjpn$$fnt-$$hv.vf upjpn$$fnt-$$hv-00.zvp0 ; \
-		jfmutil vf2zvp0 upsch$$fnt-$$hv.vf upsch$$fnt-$$hv-00.zvp0 ; \
-		jfmutil vf2zvp0 uptch$$fnt-$$hv.vf uptch$$fnt-$$hv-00.zvp0 ; \
-		jfmutil vf2zvp0 upkor$$fnt-$$hv.vf upkor$$fnt-$$hv-00.zvp0 ; \
-		cat upjpn$$fnt-$$hv-00.zvp0 svs_list_j.entry > upjpn$$fnt-$$hv-01.zvp0 ; \
-		cat upsch$$fnt-$$hv-00.zvp0 svs_list_c.entry > upsch$$fnt-$$hv-01.zvp0 ; \
-		cat uptch$$fnt-$$hv-00.zvp0 svs_list_t.entry > uptch$$fnt-$$hv-01.zvp0 ; \
-		cat upkor$$fnt-$$hv-00.zvp0 svs_list_k.entry > upkor$$fnt-$$hv-01.zvp0 ; \
-		jfmutil zvp02vf upjpn$$fnt-$$hv-01.zvp0 upjpn$$fnt-$$hv.vf ; \
-		jfmutil zvp02vf upsch$$fnt-$$hv-01.zvp0 upsch$$fnt-$$hv.vf ; \
-		jfmutil zvp02vf uptch$$fnt-$$hv-01.zvp0 uptch$$fnt-$$hv.vf ; \
-		jfmutil zvp02vf upkor$$fnt-$$hv-01.zvp0 upkor$$fnt-$$hv.vf ; \
+	for lang in jpn sch tch kor ; do \
+		echo "generating (" $$lang ", "  $$fnt ", " $$hv ")..." ; \
+		jfmutil vf2zvp0 up$$lang$$fnt-$$hv.vf up$$lang$$fnt-$$hv-00.zvp0 ; \
+		cat up$$lang$$fnt-$$hv-00.zvp0 svs_list_$$lang.entry > up$$lang$$fnt-$$hv-01.zvp0 ; \
+		jfmutil zvp02vf up$$lang$$fnt-$$hv-01.zvp0 up$$lang$$fnt-$$hv.vf ; \
+	done ; \
 	done ; \
 	done
 

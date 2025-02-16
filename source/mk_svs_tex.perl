@@ -1,7 +1,9 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -s
 
 use 5.026;
 use warnings;
+our ($style);
+$style ||= '';
 
 my ($line, $seq, $cmp, $cid, %svs_list, @svs, $i);
 
@@ -16,7 +18,10 @@ while ($line=<>) {
     my ($base,$svs) = (@_);
 
     push @svs, $seq;
-    $svs_list{"$seq"} = "$base-$svs($cmp) ".chr(hex($base))."/".chr(hex($base)).chr(hex($svs)).chr(hex($cmp));
+    if ($style ne 'min') {
+        $svs_list{"$seq"} = "$base-$svs($cmp) ";
+    }
+    $svs_list{"$seq"} .= chr(hex($base))."/".chr(hex($base)).chr(hex($svs)).chr(hex($cmp));
 
 }
 
@@ -26,8 +31,17 @@ $i=0;
 foreach $seq (@svs) {
 
     print $svs_list{"$seq"};
-    if ($i % 3 == 2){ say '\par'; }
-    else            { say ' '; }
+    if ($style ne 'min') {
+        if ($i % 3 == 2){ say '\par'; }
+        else            { say ' '; }
+    } else {
+        print ' ';
+        if ($i % 10 == 9){ say '%'; }
+    }
     $i++;
 
+}
+
+if ($style eq 'min') {
+    say '';
 }

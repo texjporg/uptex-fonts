@@ -113,6 +113,9 @@ svs_tex:
 	perl -CSD mk_svs_tex.perl svs_list_t.txt > svs_list_tch.tex
 	perl -CSD mk_svs_tex.perl svs_list_k.txt > svs_list_kor.tex
 
+svs_min_tex:
+	perl -s -CSD mk_svs_tex.perl -style=min svs_list_j.txt > svs_list_min_jpn.tex
+
 add_svs_all: add_svs_gen add_svs_remove
 
 add_svs_gen:

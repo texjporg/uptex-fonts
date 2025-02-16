@@ -4,6 +4,7 @@
 test*/
 source/*.tfm
 source/*.vf
+source/*.zvp0
 source/tfm*/
 source/vf*/
 

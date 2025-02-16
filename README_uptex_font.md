@@ -94,6 +94,18 @@ JIS -> Unicode conversion is ambiguous and depends on tables.
 ChangeLog
 ---------
 
+### uptex-fonts-20250218
+* cmap/UTF8-UTF16:
+  Updated (Version: 1.012).
+* source/makejvf-up{jis,jpn,sch,tch,kor}.cnf:
+  Minimized entries of characters over BMP in virtual fonts.
+* source/Makefile,mk_svs_{entry,tex}.perl,
+  source/svs_list_{j,c,t,k}.txt,svs_list_{jpn,sch,tch,kor}.entry:
+  Supported SVS (Standardized Variation Sequence).
+  jfmutil is required to generate virtual fonts.
+* vf/up{jpn,sch,tch,kor}{rm,gt}-{h,v}.vf,upjis{r,g}-{h,v}.vf:
+  Regenerated.
+
 ### uptex-fonts-20230916
 * cmap/UTF8-UTF16:
   Updated (Version: 1.010).
